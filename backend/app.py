@@ -2,9 +2,20 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 from models import db, University, Program, ProgramTag
 import datetime
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://neondb_owner:npg_tEDGZj0hFuQ6@ep-hidden-art-a12ljjgh-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require&options=endpoint%3Dep-hidden-art-a12ljjgh'
+
+# Database configuration from environment variables
+DATABASE_URL = os.getenv('DATABASE_URL')
+if not DATABASE_URL:
+    raise ValueError("DATABASE_URL environment variable is required. Please check your config.env file.")
+
+app.config['SQLALCHEMY_DATABASE_URI'] = DATABASE_URL
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 CORS(app)

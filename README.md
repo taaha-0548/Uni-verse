@@ -16,7 +16,9 @@ The platform features a clean, modern interface with a personal dashboard where 
 
 ## 🚀 Quick Start
 
-Simply run:
+1. **Database Setup**: The platform uses Neon DB. Your database credentials are stored in `.env` file.
+
+2. **Start the platform**:
 ```bash
 python start_dev.py
 ```
@@ -65,4 +67,13 @@ Uni-verse/
 
 ## 🛠️ Development
 
-The platform is designed to be simple and focused on program discovery, not application management. All unnecessary files have been removed to keep the codebase clean and maintainable. 
+The platform is designed to be simple and focused on program discovery, not application management. All unnecessary files have been removed to keep the codebase clean and maintainable.
+
+## ⚙️ Configuration
+
+Database credentials are stored in `.env` file for security. The file contains:
+- `DATABASE_URL`: Your Neon DB connection string
+- `FLASK_ENV`: Development environment setting
+- `FLASK_DEBUG`: Debug mode setting
+
+**⚠️ Security Note**: Never commit `.env` to version control. The file contains sensitive database credentials. 
