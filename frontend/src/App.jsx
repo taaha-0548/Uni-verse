@@ -11,7 +11,7 @@ import './index.css';
 
 function App() {
   const [studentData, setStudentData] = useState(null);
-  const [matchedPrograms, setMatchedPrograms] = useState([]);
+  const [matchedOfferings, setMatchedOfferings] = useState([]);
 
   const handleFormSubmit = async (formData) => {
     setStudentData(formData);
@@ -27,7 +27,7 @@ function App() {
       
       if (response.ok) {
         const data = await response.json();
-        setMatchedPrograms(data.matched_programs);
+        setMatchedOfferings(data.matched_offerings);
       } else {
         console.error('Failed to match programs');
       }
@@ -44,7 +44,7 @@ function App() {
           <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/form" element={<StudentForm onSubmit={handleFormSubmit} />} />
-          <Route path="/results" element={<ResultsPage matchedPrograms={matchedPrograms} studentData={studentData} />} />
+          <Route path="/results" element={<ResultsPage matchedOfferings={matchedOfferings} studentData={studentData} />} />
           <Route path="/program/:id" element={<ProgramDetail />} />
           <Route path="/university/:id" element={<UniversityDetail />} />
           <Route path="/dashboard" element={<Dashboard />} />

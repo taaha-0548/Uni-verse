@@ -1,66 +1,57 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { ArrowLeft, MapPin, DollarSign, Calendar, Phone, Mail, Globe, Clock, Users, BookOpen } from 'lucide-react';
+import { ArrowLeft, MapPin, DollarSign, Calendar, Phone, Mail, Globe, Clock, Users, BookOpen, Building } from 'lucide-react';
 
 const ProgramDetail = () => {
   const { id } = useParams();
   const [program, setProgram] = useState(null);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Simulate fetching program data
-    setTimeout(() => {
-      setProgram({
-        id: id,
-        name: "Bachelor of Science in Computer Science",
-        university: {
-          id: 1,
-          name: "Lahore University of Management Sciences (LUMS)",
-          city: "Lahore"
-        },
-        overview: "This program provides a comprehensive foundation in computer science, covering programming, algorithms, data structures, software engineering, and computer systems. Students develop strong problem-solving skills and gain hands-on experience through projects and internships.",
-        degree_type: "BS",
-        duration_years: 4,
-        seats_available: 120,
-        admission_test: "LUMS Admission Test",
-        merit_based: true,
-        career_prospects: "Graduates can pursue careers in software development, data science, artificial intelligence, cybersecurity, and IT consulting. Many alumni work at top tech companies globally.",
-        min_ssc_pct: 70,
-        min_hsc_pct: 75,
-        required_group: "Pre-Engineering",
-        annual_fees: 850000,
-        application_deadline: "2024-03-15",
-        classes_start: "2024-09-01",
-        contact_email: "admissions@lums.edu.pk",
-        contact_phone: "+92-42-35608000",
-        website_url: "https://lums.edu.pk",
-        courses: [
-          { code: "CS101", name: "Introduction to Programming", credits: 3, semester: 1 },
-          { code: "CS102", name: "Data Structures", credits: 3, semester: 2 },
-          { code: "CS201", name: "Algorithms", credits: 3, semester: 3 },
-          { code: "CS202", name: "Database Systems", credits: 3, semester: 4 },
-          { code: "CS301", name: "Software Engineering", credits: 3, semester: 5 },
-          { code: "CS302", name: "Computer Networks", credits: 3, semester: 6 },
-          { code: "CS401", name: "Artificial Intelligence", credits: 3, semester: 7 },
-          { code: "CS402", name: "Final Year Project", credits: 6, semester: 8 }
-        ],
-        fee_structure: [
-          { component: "Tuition Fee", amount: 650000, frequency: "Annual" },
-          { component: "Registration Fee", amount: 25000, frequency: "One-time" },
-          { component: "Laboratory Fee", amount: 50000, frequency: "Annual" },
-          { component: "Library Fee", amount: 15000, frequency: "Annual" },
-          { component: "Student Activity Fee", amount: 10000, frequency: "Annual" },
-          { component: "Hostel Fee", amount: 120000, frequency: "Annual" }
-        ]
-      });
-      setLoading(false);
-    }, 1000);
+    const fetchProgramData = async () => {
+      try {
+        setLoading(true);
+        const response = await fetch(`http://localhost:5000/api/program/${id}`);
+        
+        if (!response.ok) {
+          throw new Error('Failed to fetch program data');
+        }
+        
+        const data = await response.json();
+        if (data.success) {
+          setProgram(data.program);
+        } else {
+          throw new Error(data.error || 'Failed to load program');
+        }
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProgramData();
   }, [id]);
 
   if (loading) {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Error Loading Program</h2>
+          <p className="text-gray-600 mb-4">{error}</p>
+          <Link to="/results" className="text-blue-600 hover:text-blue-700 font-medium">
+            Back to Results
+          </Link>
+        </div>
       </div>
     );
   }
@@ -89,97 +80,137 @@ const ProgramDetail = () => {
             Back to Results
           </Link>
           <h1 className="text-3xl font-bold text-gray-900 mb-2">{program.name}</h1>
-          <p className="text-xl text-gray-600">{program.university.name}</p>
+          {program.discipline && (
+            <p className="text-xl text-gray-600 mb-2">{program.discipline}</p>
+          )}
+          {program.code && (
+            <p className="text-lg text-gray-500">Program Code: {program.code}</p>
+          )}
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Overview */}
+            {/* Program Overview */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Overview</h2>
-              <p className="text-gray-700 leading-relaxed">{program.overview}</p>
-            </div>
-
-            {/* Eligibility */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Eligibility</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Program Overview</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="flex items-center">
                   <BookOpen className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
-                    <p className="text-sm text-gray-600">Minimum SSC Score</p>
-                    <p className="font-medium">{program.min_ssc_pct}%</p>
+                    <p className="text-sm text-gray-600">Program Name</p>
+                    <p className="font-medium">{program.name}</p>
                   </div>
                 </div>
-                <div className="flex items-center">
-                  <BookOpen className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="text-sm text-gray-600">Minimum HSC Score</p>
-                    <p className="font-medium">{program.min_hsc_pct}%</p>
+                {program.discipline && (
+                  <div className="flex items-center">
+                    <BookOpen className="w-5 h-5 text-blue-600 mr-3" />
+                    <div>
+                      <p className="text-sm text-gray-600">Discipline</p>
+                      <p className="font-medium">{program.discipline}</p>
+                    </div>
                   </div>
-                </div>
+                )}
+                {program.code && (
+                  <div className="flex items-center">
+                    <BookOpen className="w-5 h-5 text-blue-600 mr-3" />
+                    <div>
+                      <p className="text-sm text-gray-600">Program Code</p>
+                      <p className="font-medium">{program.code}</p>
+                    </div>
+                  </div>
+                )}
                 <div className="flex items-center">
                   <Users className="w-5 h-5 text-blue-600 mr-3" />
                   <div>
-                    <p className="text-sm text-gray-600">Required Group</p>
-                    <p className="font-medium">{program.required_group}</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="w-5 h-5 text-blue-600 mr-3" />
-                  <div>
-                    <p className="text-sm text-gray-600">Duration</p>
-                    <p className="font-medium">{program.duration_years} Years</p>
+                    <p className="text-sm text-gray-600">Total Offerings</p>
+                    <p className="font-medium">{program.offerings.length} campuses</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Courses */}
+            {/* Program Offerings */}
             <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Courses</h2>
-              <div className="overflow-x-auto">
-                <table className="w-full">
-                  <thead>
-                    <tr className="border-b border-gray-200">
-                      <th className="text-left py-3 px-4 font-medium text-gray-900">Code</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-900">Course Name</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-900">Credits</th>
-                      <th className="text-left py-3 px-4 font-medium text-gray-900">Semester</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {program.courses.map((course, index) => (
-                      <tr key={index} className="border-b border-gray-100">
-                        <td className="py-3 px-4 text-sm font-medium text-gray-900">{course.code}</td>
-                        <td className="py-3 px-4 text-sm text-gray-700">{course.name}</td>
-                        <td className="py-3 px-4 text-sm text-gray-700">{course.credits}</td>
-                        <td className="py-3 px-4 text-sm text-gray-700">{course.semester}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            {/* Fee Structure */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Fee Structure</h2>
-              <div className="space-y-3">
-                {program.fee_structure.map((fee, index) => (
-                  <div key={index} className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <div>
-                      <p className="font-medium text-gray-900">{fee.component}</p>
-                      <p className="text-sm text-gray-600">{fee.frequency}</p>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Available at Campuses</h2>
+              <div className="space-y-4">
+                {program.offerings.map((offering, index) => (
+                  <div key={offering.id} className="border border-gray-200 rounded-lg p-4">
+                    <div className="flex items-start justify-between mb-3">
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900">{offering.university.name}</h3>
+                        <p className="text-gray-600">{offering.campus.city}</p>
+                        <p className="text-sm text-gray-500">{offering.university.sector} University</p>
+                      </div>
+                      <div className="text-right">
+                        <p className="text-lg font-bold text-blue-600">PKR {offering.annual_fee.toLocaleString()}</p>
+                        <p className="text-sm text-gray-600">per year</p>
+                      </div>
                     </div>
-                    <p className="font-semibold text-gray-900">PKR {fee.amount.toLocaleString()}</p>
+
+                    <div className="grid md:grid-cols-2 gap-4 mb-4">
+                      <div className="flex items-center text-sm text-gray-600">
+                        <BookOpen className="w-4 h-4 mr-2" />
+                        Min Score: {offering.min_score_pct}% ({offering.min_score_type})
+                      </div>
+                      <div className="flex items-center text-sm text-gray-600">
+                        <Building className="w-4 h-4 mr-2" />
+                        Hostel: {offering.hostel_available ? 'Available' : 'Not Available'}
+                      </div>
+                    </div>
+
+                    {offering.required_groups && offering.required_groups.length > 0 && (
+                      <div className="mb-3">
+                        <p className="text-sm font-medium text-gray-700 mb-2">Required Groups:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {offering.required_groups.map(group => (
+                            <span key={group} className="px-2 py-1 bg-green-100 text-green-700 text-xs rounded-full">
+                              {group}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {offering.accepted_boards && offering.accepted_boards.length > 0 && (
+                      <div className="mb-3">
+                        <p className="text-sm font-medium text-gray-700 mb-2">Accepted Boards:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {offering.accepted_boards.map(board => (
+                            <span key={board} className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
+                              {board}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    {offering.tags && offering.tags.length > 0 && (
+                      <div className="mb-3">
+                        <p className="text-sm font-medium text-gray-700 mb-2">Tags:</p>
+                        <div className="flex flex-wrap gap-2">
+                          {offering.tags.map(tag => (
+                            <span key={tag} className="px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+
+                    <div className="flex space-x-2">
+                      <Link
+                        to={`/university/${offering.university.id}`}
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                      >
+                        View University
+                      </Link>
+                      <button className="border border-blue-600 text-blue-600 hover:bg-blue-50 px-4 py-2 rounded-lg text-sm font-medium transition-colors">
+                        Apply Now
+                      </button>
+                    </div>
                   </div>
                 ))}
-                <div className="flex justify-between items-center py-3 border-t-2 border-gray-200">
-                  <p className="font-bold text-lg text-gray-900">Total Annual Cost</p>
-                  <p className="font-bold text-lg text-blue-600">PKR {program.annual_fees.toLocaleString()}</p>
-                </div>
               </div>
             </div>
           </div>
@@ -191,62 +222,20 @@ const ProgramDetail = () => {
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Quick Info</h3>
               <div className="space-y-3">
                 <div className="flex items-center">
-                  <MapPin className="w-4 h-4 text-gray-400 mr-3" />
-                  <span className="text-sm text-gray-700">{program.university.city}</span>
+                  <Users className="w-4 h-4 text-gray-400 mr-3" />
+                  <span className="text-sm text-gray-700">{program.offerings.length} campus offerings</span>
                 </div>
                 <div className="flex items-center">
                   <DollarSign className="w-4 h-4 text-gray-400 mr-3" />
-                  <span className="text-sm text-gray-700">PKR {program.annual_fees.toLocaleString()}/year</span>
+                  <span className="text-sm text-gray-700">
+                    PKR {Math.min(...program.offerings.map(o => o.annual_fee)).toLocaleString()} - {Math.max(...program.offerings.map(o => o.annual_fee)).toLocaleString()}/year
+                  </span>
                 </div>
                 <div className="flex items-center">
-                  <Users className="w-4 h-4 text-gray-400 mr-3" />
-                  <span className="text-sm text-gray-700">{program.seats_available} seats available</span>
-                </div>
-                <div className="flex items-center">
-                  <Clock className="w-4 h-4 text-gray-400 mr-3" />
-                  <span className="text-sm text-gray-700">{program.duration_years} years duration</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Application Deadlines */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Application Deadlines</h3>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <Calendar className="w-4 h-4 text-red-500 mr-3" />
-                  <div>
-                    <p className="text-sm font-medium text-gray-900">Application Deadline</p>
-                    <p className="text-sm text-gray-600">{new Date(program.application_deadline).toLocaleDateString()}</p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <Calendar className="w-4 h-4 text-green-500 mr-3" />
-                  <div>
-                    <p className="text-sm font-medium text-gray-900">Classes Start</p>
-                    <p className="text-sm text-gray-600">{new Date(program.classes_start).toLocaleDateString()}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Contact Information */}
-            <div className="bg-white rounded-lg shadow-md p-6">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
-              <div className="space-y-3">
-                <div className="flex items-center">
-                  <Phone className="w-4 h-4 text-gray-400 mr-3" />
-                  <span className="text-sm text-gray-700">{program.contact_phone}</span>
-                </div>
-                <div className="flex items-center">
-                  <Mail className="w-4 h-4 text-gray-400 mr-3" />
-                  <span className="text-sm text-gray-700">{program.contact_email}</span>
-                </div>
-                <div className="flex items-center">
-                  <Globe className="w-4 h-4 text-gray-400 mr-3" />
-                  <a href={program.website_url} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:text-blue-700">
-                    Visit Website
-                  </a>
+                  <BookOpen className="w-4 h-4 text-gray-400 mr-3" />
+                  <span className="text-sm text-gray-700">
+                    Min Score: {Math.min(...program.offerings.map(o => o.min_score_pct))}% - {Math.max(...program.offerings.map(o => o.min_score_pct))}%
+                  </span>
                 </div>
               </div>
             </div>
@@ -255,16 +244,16 @@ const ProgramDetail = () => {
             <div className="bg-white rounded-lg shadow-md p-6">
               <div className="space-y-3">
                 <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-4 rounded-lg font-medium transition-colors">
-                  Apply Now
+                  Compare All Offerings
                 </button>
                 <button className="w-full border border-blue-600 text-blue-600 hover:bg-blue-50 py-3 px-4 rounded-lg font-medium transition-colors">
                   Save Program
                 </button>
                 <Link
-                  to={`/university/${program.university.id}`}
+                  to="/results"
                   className="w-full border border-gray-300 text-gray-700 hover:bg-gray-50 py-3 px-4 rounded-lg font-medium transition-colors inline-block text-center"
                 >
-                  View University
+                  Back to Results
                 </Link>
               </div>
             </div>
