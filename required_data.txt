@@ -1,0 +1,62 @@
+
+
+## **For Each University, Collect:**
+
+### 1. **University Information**
+- University Name
+- Sector (Public, Private, or Semi-Government)
+
+---
+
+### 2. **Campus Information**
+- For each campus:
+  - City (where the campus is located)
+
+---
+
+### 3. **Programs Offered**
+- For each program:
+  - Program Name (e.g., BS Computer Science, MBBS)
+  - Discipline/Field (e.g., Engineering, Medicine, Computer Science)
+  - Program Code (if available)
+
+---
+
+### 4. **Program Offerings (per campus)**
+- For each program at each campus:
+  - Minimum required percentage (e.g., 60%)
+  - Type of minimum score (e.g., SSC/HSC, IBCC)
+  - Annual tuition fee
+  - Is hostel available? (Yes/No)
+
+---
+
+### 5. **Eligibility & Admission Requirements**
+- For each program offering:
+  - Accepted Boards (e.g., BISE Karachi, A-Levels, etc.)
+  - Accepted Subject Groups (e.g., Pre-Medical, Pre-Engineering, ICS, ICom, IA)
+  - Required Entrance Tests (e.g., MDCAT, ECAT, NTS, etc.) and minimum scores
+
+---
+
+### 6. **Tags/Keywords**
+- For each program offering:
+  - Relevant tags/keywords (e.g., “computer-science”, “engineering”, “mbbs”, etc.)
+
+---
+
+## **Summary Table**
+
+| Section                | What to Collect                                                                 |
+|------------------------|---------------------------------------------------------------------------------|
+| University             | Name, Sector                                                                    |
+| Campus                 | City (for each campus)                                                          |
+| Program                | Name, Discipline, Code (for each program)                                       |
+| Program Offering       | Min % required, Score type, Annual fee, Hostel (for each program at each campus)|
+| Admission Requirements | Accepted boards, subject groups, entrance tests & scores (per offering)         |
+| Tags                   | Keywords/tags for each program offering                                         |
+
+---
+
+**This is the information you need to ask your data person to collect for each university.**  
+No need to worry about database structure—just make sure you have all these details for every university, campus, and program offered!

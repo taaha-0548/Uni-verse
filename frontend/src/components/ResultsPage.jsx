@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, DollarSign, Star, Filter, SortAsc, SortDesc, AlertCircle, CheckCircle } from 'lucide-react';
 
@@ -11,6 +11,16 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
     subjectCompatible: 'all', // 'all', 'compatible', 'incompatible'
     eligibility: 'all' // 'all', 'eligible', 'ineligible'
   });
+
+  // Apply user's preferred location when component mounts or studentData changes
+  useEffect(() => {
+    if (studentData && studentData.preferredLocation) {
+      setFilters(prev => ({
+        ...prev,
+        location: studentData.preferredLocation
+      }));
+    }
+  }, [studentData]);
   const [sortBy, setSortBy] = useState('priority');
   const [sortOrder, setSortOrder] = useState('desc');
 
@@ -124,7 +134,7 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
           {studentData && (
             <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
               <h3 className="text-sm font-medium text-blue-900 mb-2">Your Profile</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm">
                 <div>
                   <span className="text-blue-700">HSC Group:</span>
                   <span className="ml-2 font-medium">{studentData.hscGroup}</span>
@@ -137,15 +147,21 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                   <span className="text-blue-700">Budget:</span>
                   <span className="ml-2 font-medium">PKR {parseInt(studentData.budget).toLocaleString()}</span>
                 </div>
-                                 <div>
-                   <span className="text-blue-700">Interests:</span>
-                   <span className="ml-2 font-medium">
-                     {studentData.interestPriorities ? 
-                       studentData.interestPriorities.map(item => item.interest).join(' → ') :
-                       studentData.interests.join(', ')
-                     }
-                   </span>
-                 </div>
+                {studentData.preferredLocation && (
+                  <div>
+                    <span className="text-blue-700">Preferred Location:</span>
+                    <span className="ml-2 font-medium">{studentData.preferredLocation}</span>
+                  </div>
+                )}
+                <div>
+                  <span className="text-blue-700">Interests:</span>
+                  <span className="ml-2 font-medium">
+                    {studentData.interestPriorities ? 
+                      studentData.interestPriorities.map(item => item.interest).join(' → ') :
+                      studentData.interests.join(', ')
+                    }
+                  </span>
+                </div>
               </div>
             </div>
           )}
