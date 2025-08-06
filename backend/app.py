@@ -61,63 +61,47 @@ def match_programs():
         budget = int(data.get('budget', 0))
         preferred_location = data.get('preferredLocation', '')
         
-        # Define subject group restrictions - more realistic approach
+        # Define subject group restrictions based on official NED prospectus criteria
         subject_restrictions = {
-            'Pre-Medical': [
-                # Pre-Medical students can choose ANY field (broadest background)
-                'Computer Science', 'Engineering', 'Technology', 'Architecture', 
-                'Software Engineering', 'Information Technology', 'Data Science',
-                'Artificial Intelligence', 'Cybersecurity', 'Robotics',
-                'Medicine', 'Dentistry', 'Pharmacy', 'Nursing', 'Physiotherapy',
-                'Medical Technology', 'Biotechnology', 'Biochemistry', 'Microbiology',
-                'Public Health', 'Nutrition', 'Business', 'Commerce', 'Economics', 
-                'Finance', 'Accounting', 'Marketing', 'Management', 'Banking', 
-                'Insurance', 'Taxation', 'Arts', 'Humanities', 'Literature', 
-                'History', 'Philosophy', 'Psychology', 'Sociology', 'Political Science', 
-                'International Relations', 'Media Studies', 'Journalism', 'Education'
-            ],
             'Pre-Engineering': [
-                # Pre-Engineering students can do everything EXCEPT medical/biology fields
-                'Computer Science', 'Engineering', 'Technology', 'Architecture', 
-                'Software Engineering', 'Information Technology', 'Data Science',
-                'Artificial Intelligence', 'Cybersecurity', 'Robotics',
-                'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-                'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-                'Arts', 'Humanities', 'Literature', 'History', 'Philosophy',
-                'Psychology', 'Sociology', 'Political Science', 'International Relations',
-                'Media Studies', 'Journalism', 'Education'
+                # Pre-Engineering: Eligible for ALL programs (most versatile group)
+                # According to prospectus: Eligible for all disciplines available within their academic group
+                'architecture', 'artificial-intelligence', 'biomedical-engineering',
+                'chemical-engineering', 'chemistry', 'civil-engineering', 
+                'computational-finance', 'computer-science', 'computer-systems',
+                'cyber-security', 'data-science', 'development-studies', 'economics',
+                'electrical-engineering', 'electronic-engineering', 'engineering',
+                'english-linguistics', 'finance', 'food-engineering', 'gaming-animation',
+                'ics', 'industrial-manufacturing', 'management-sciences', 
+                'materials-engineering', 'mechanical-engineering', 'metallurgical-engineering',
+                'petrochemical-engineering', 'petroleum-engineering', 'physics',
+                'polymer-engineering', 'software-engineering', 'telecommunications',
+                'textile-sciences'
             ],
             'ICS (Computer Science)': [
-                # ICS students can do everything EXCEPT medical/biology fields
-                'Computer Science', 'Software Engineering', 'Information Technology',
-                'Data Science', 'Artificial Intelligence', 'Cybersecurity',
-                'Web Development', 'Game Development', 'Mobile Development',
-                'Engineering', 'Technology', 'Architecture', 'Robotics',
-                'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-                'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-                'Arts', 'Humanities', 'Literature', 'History', 'Philosophy',
-                'Psychology', 'Sociology', 'Political Science', 'International Relations',
-                'Media Studies', 'Journalism', 'Education'
+                # ICS: Eligible for BS programs + Computer Science + Architecture (NO Engineering)
+                # According to prospectus: NOT eligible for Engineering programs
+                'architecture', 'artificial-intelligence', 'computer-science', 'computer-systems',
+                'cyber-security', 'data-science', 'chemistry', 'computational-finance',
+                'development-studies', 'economics', 'english-linguistics', 'finance',
+                'gaming-animation', 'ics', 'management-sciences', 'physics',
+                'software-engineering', 'telecommunications', 'textile-sciences'
+            ],
+            'Pre-Medical': [
+                # Pre-Medical: Eligible for BS programs + Biomedical Engineering only
+                # According to prospectus: NOT eligible for other Engineering, CS, or Management Sciences
+                'biomedical-engineering', 'chemistry', 'computational-finance', 'development-studies',
+                'economics', 'english-linguistics', 'finance', 'physics'
             ],
             'ICom (Commerce)': [
-                # Commerce students should focus on business/arts with some CS
-                'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-                'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-                'Arts', 'Humanities', 'Literature', 'History', 'Philosophy',
-                'Psychology', 'Sociology', 'Political Science', 'International Relations',
-                'Media Studies', 'Journalism', 'Education',
-                'Computer Science', 'Information Technology', 'Data Science',
-                'Web Development', 'Game Development', 'Mobile Development'
+                # Commerce: Eligible for Management Sciences, Economics & Finance, English Linguistics, Development Studies
+                # According to prospectus: NOT eligible for Engineering, CS, Computational Finance, or Physics
+                'development-studies', 'economics', 'english-linguistics', 'finance', 'management-sciences'
             ],
             'IA (Arts)': [
-                # Arts students should focus on arts/humanities with some business/CS
-                'Arts', 'Humanities', 'Literature', 'History', 'Philosophy',
-                'Psychology', 'Sociology', 'Political Science', 'International Relations',
-                'Media Studies', 'Journalism', 'Education',
-                'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-                'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-                'Computer Science', 'Information Technology', 'Data Science',
-                'Web Development', 'Game Development', 'Mobile Development'
+                # Arts: Eligible for Management Sciences, Economics & Finance, English Linguistics, Development Studies
+                # According to prospectus: NOT eligible for Engineering, CS, Computational Finance, or Physics
+                'development-studies', 'economics', 'english-linguistics', 'finance', 'management-sciences'
             ]
         }
         
@@ -131,11 +115,11 @@ def match_programs():
         if not filtered_interests and hsc_group in subject_restrictions:
             # Allow some flexibility based on group
             if hsc_group == 'Pre-Engineering':
-                filtered_interests = ['Computer Science', 'Engineering', 'Technology']
+                filtered_interests = ['computer-science', 'engineering', 'Technology']
             elif hsc_group == 'Pre-Medical':
                 filtered_interests = ['Medicine', 'Health Sciences']
             elif hsc_group == 'ICS (Computer Science)':
-                filtered_interests = ['Computer Science', 'Technology']
+                filtered_interests = ['computer-science', 'Technology']
             elif hsc_group == 'ICom (Commerce)':
                 filtered_interests = ['Business', 'Commerce']
             elif hsc_group == 'IA (Arts)':
@@ -187,13 +171,15 @@ def match_programs():
                 explanations.append(f"❌ Academic score ({max(ssc_percentage, hsc_percentage)}%) below requirement ({row.min_score_pct}%)")
             
             # Subject group compatibility check (CRITICAL)
+            is_compatible = False  # Initialize is_compatible variable
+            
             if row.required_groups and hsc_group:
                 if hsc_group in row.required_groups:
                     score += 35  # Higher weight for subject compatibility
                     explanations.append(f"✅ HSC group ({hsc_group}) matches program requirement ({row.required_groups})")
+                    is_compatible = True
                 else:
                     # Check if student's group is compatible with program
-                    is_compatible = False
                     
                     # Clear compatibility rules based on user requirements
                     if hsc_group == 'Pre-Medical':
@@ -349,15 +335,15 @@ def match_programs():
                                 'boost_tags': ['dentistry', 'dental']
                             },
                             'engineering': {
-                                'core_tags': ['civil', 'electrical', 'mechanical', 'chemical', 'aerospace', 'industrial', 'computer engineering'],
+                                'core_tags': ['civil', 'electrical', 'mechanical', 'chemical', 'aerospace', 'industrial', 'computer engineering', 'civil-engineering', 'electrical-engineering', 'mechanical-engineering', 'chemical-engineering', 'engineering'],
                                 'general_tags': ['engineering', 'computer'],
                                 'exclusion_tags': ['technology', 'information technology', 'it'],
-                                'boost_tags': ['civil', 'electrical', 'mechanical', 'chemical', 'computer engineering']
+                                'boost_tags': ['civil', 'electrical', 'mechanical', 'chemical', 'computer engineering', 'civil-engineering', 'electrical-engineering', 'mechanical-engineering', 'chemical-engineering', 'engineering']
                             },
                             'computer science': {
                                 'core_tags': ['computer science', 'computer-science', 'software engineering', 'software-engineering', 'programming', 'software'],
                                 'general_tags': ['software', 'programming', 'computer-science'],
-                                'exclusion_tags': ['information technology', 'information-technology', 'it', 'information systems', 'computer engineering', 'electronics', 'engineering'],
+                                'exclusion_tags': ['information technology', 'information-technology', 'it', 'information systems'],
                                 'boost_tags': ['computer science', 'computer-science', 'software engineering', 'software-engineering']
                             },
                             'business': {
@@ -481,10 +467,10 @@ def match_programs():
                                 'boost_tags': ['information technology', 'it']
                             },
                             'data science': {
-                                'core_tags': ['data science', 'data analytics'],
+                                'core_tags': ['data science', 'data analytics', 'data-science'],
                                 'general_tags': ['machine learning'],
                                 'exclusion_tags': [],
-                                'boost_tags': ['data science', 'data analytics']
+                                'boost_tags': ['data science', 'data analytics', 'data-science']
                             },
                             'web development': {
                                 'core_tags': ['web development', 'web'],
@@ -521,6 +507,464 @@ def match_programs():
                                 'general_tags': ['tax law'],
                                 'exclusion_tags': [],
                                 'boost_tags': ['taxation', 'tax']
+                            },
+                            'architecture': {
+                                'core_tags': ['architecture'],
+                                'general_tags': ['design', 'urban planning'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['architecture']
+                            },
+                            'computational finance': {
+                                'core_tags': ['computational-finance'],
+                                'general_tags': ['finance', 'computational'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['computational-finance']
+                            },
+                            'cyber security': {
+                                'core_tags': ['cyber-security'],
+                                'general_tags': ['security', 'cybersecurity'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['cyber-security']
+                            },
+                            'ics': {
+                                'core_tags': ['ics'],
+                                'general_tags': ['computer', 'information'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['ics']
+                            },
+                            'software engineering': {
+                                'core_tags': ['software-engineering'],
+                                'general_tags': ['software', 'programming'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['software-engineering']
+                            },
+                            'civil engineering': {
+                                'core_tags': ['civil-engineering'],
+                                'general_tags': ['civil', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['civil-engineering']
+                            },
+                            'electrical engineering': {
+                                'core_tags': ['electrical-engineering'],
+                                'general_tags': ['electrical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['electrical-engineering']
+                            },
+                            'mechanical engineering': {
+                                'core_tags': ['mechanical-engineering'],
+                                'general_tags': ['mechanical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['mechanical-engineering']
+                            },
+                            'chemical engineering': {
+                                'core_tags': ['chemical-engineering'],
+                                'general_tags': ['chemical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['chemical-engineering']
+                            },
+                            # Updated tags based on user requirements
+                            'architecture': {
+                                'core_tags': ['architecture'],
+                                'general_tags': ['design', 'urban planning'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['architecture']
+                            },
+                            'artificial-intelligence': {
+                                'core_tags': ['artificial-intelligence'],
+                                'general_tags': ['ai', 'machine learning'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['artificial-intelligence']
+                            },
+                            'biomedical-engineering': {
+                                'core_tags': ['biomedical-engineering'],
+                                'general_tags': ['biomedical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['biomedical-engineering']
+                            },
+                            'chemical-engineering': {
+                                'core_tags': ['chemical-engineering'],
+                                'general_tags': ['chemical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['chemical-engineering']
+                            },
+                            'chemistry': {
+                                'core_tags': ['chemistry'],
+                                'general_tags': ['chemical', 'science'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['chemistry']
+                            },
+                            'civil-engineering': {
+                                'core_tags': ['civil-engineering'],
+                                'general_tags': ['civil', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['civil-engineering']
+                            },
+                            'computational-finance': {
+                                'core_tags': ['computational-finance'],
+                                'general_tags': ['finance', 'computational'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['computational-finance']
+                            },
+                            'computer-science': {
+                                'core_tags': ['computer-science'],
+                                'general_tags': ['programming', 'computing'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['computer-science']
+                            },
+                            'computer-systems': {
+                                'core_tags': ['computer-systems'],
+                                'general_tags': ['systems', 'computing'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['computer-systems']
+                            },
+                            'cyber-security': {
+                                'core_tags': ['cyber-security'],
+                                'general_tags': ['security', 'computing'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['cyber-security']
+                            },
+                            'data-science': {
+                                'core_tags': ['data-science'],
+                                'general_tags': ['data', 'analytics'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['data-science']
+                            },
+                            'development-studies': {
+                                'core_tags': ['development-studies'],
+                                'general_tags': ['development', 'social sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['development-studies']
+                            },
+                            'economics': {
+                                'core_tags': ['economics'],
+                                'general_tags': ['economy', 'social sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['economics']
+                            },
+                            'electrical-engineering': {
+                                'core_tags': ['electrical-engineering'],
+                                'general_tags': ['electrical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['electrical-engineering']
+                            
+                            },
+                            'electronic-engineering': {
+                                'core_tags': ['electronic-engineering'],
+                                'general_tags': ['electronic', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['electronic-engineering']
+                            },
+                            'engineering': {
+                                'core_tags': ['engineering'],
+                                'general_tags': ['engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['engineering']
+                            },
+                            'english-linguistics': {
+                                'core_tags': ['english-linguistics'],
+                                'general_tags': ['english', 'linguistics'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['english-linguistics']
+                            },
+                            'finance': {
+                                'core_tags': ['finance'],
+                                'general_tags': ['financial', 'business'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['finance']
+                            },
+                            'food-engineering': {
+                                'core_tags': ['food-engineering'],
+                                'general_tags': ['food', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['food-engineering']
+                            },
+                            'gaming-animation': {
+                                'core_tags': ['gaming-animation'],
+                                'general_tags': ['gaming', 'animation'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['gaming-animation']
+                            },
+                            'industrial-manufacturing': {
+                                'core_tags': ['industrial-manufacturing'],
+                                'general_tags': ['industrial', 'manufacturing'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['industrial-manufacturing']
+                            },
+                            'management-sciences': {
+                                'core_tags': ['management-sciences'],
+                                'general_tags': ['management', 'business'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['management-sciences']
+                            },
+                            'materials-engineering': {
+                                'core_tags': ['materials-engineering'],
+                                'general_tags': ['materials', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['materials-engineering']
+                            },
+                            'mechanical-engineering': {
+                                'core_tags': ['mechanical-engineering'],
+                                'general_tags': ['mechanical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['mechanical-engineering']
+                            },
+                            'metallurgical-engineering': {
+                                'core_tags': ['metallurgical-engineering'],
+                                'general_tags': ['metallurgical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['metallurgical-engineering']
+                            },
+                            'petrochemical-engineering': {
+                                'core_tags': ['petrochemical-engineering'],
+                                'general_tags': ['petrochemical', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['petrochemical-engineering']
+                            },
+                            'petroleum-engineering': {
+                                'core_tags': ['petroleum-engineering'],
+                                'general_tags': ['petroleum', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['petroleum-engineering']
+                            },
+                            'physics': {
+                                'core_tags': ['physics'],
+                                'general_tags': ['physical sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['physics']
+                            },
+                            'polymer-engineering': {
+                                'core_tags': ['polymer-engineering'],
+                                'general_tags': ['polymer', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['polymer-engineering']
+                            },
+                            'software-engineering': {
+                                'core_tags': ['software-engineering'],
+                                'general_tags': ['software', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['software-engineering']
+                            },
+                            'telecommunications': {
+                                'core_tags': ['telecommunications'],
+                                'general_tags': ['telecom', 'communication'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['telecommunications']
+                            },
+                            'textile-sciences': {
+                                'core_tags': ['textile-sciences'],
+                                'general_tags': ['textile', 'sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['textile-sciences']
+                            },
+                            'aerospace-engineering': {
+                                'core_tags': ['aerospace-engineering'],
+                                'general_tags': ['aerospace', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['aerospace-engineering']
+                            },
+                            'metallurgy': {
+                                'core_tags': ['metallurgy'],
+                                'general_tags': ['metals', 'materials'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['metallurgy']
+                            },
+                            'environmental-engineering': {
+                                'core_tags': ['environmental-engineering'],
+                                'general_tags': ['environmental', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['environmental-engineering']
+                            },
+                            'geoinformatics': {
+                                'core_tags': ['geoinformatics'],
+                                'general_tags': ['geo', 'informatics'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['geoinformatics']
+                            },
+                            'computer-engineering': {
+                                'core_tags': ['computer-engineering'],
+                                'general_tags': ['computer', 'engineering'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['computer-engineering']
+                            },
+                            'mechatronics': {
+                                'core_tags': ['mechatronics'],
+                                'general_tags': ['mechanical', 'electronics'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['mechatronics']
+                            },
+                            'information-security': {
+                                'core_tags': ['information-security'],
+                                'general_tags': ['security', 'information'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['information-security']
+                            },
+                            'avionics': {
+                                'core_tags': ['avionics'],
+                                'general_tags': ['aviation', 'electronics'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['avionics']
+                            },
+                            'naval-architecture': {
+                                'core_tags': ['naval-architecture'],
+                                'general_tags': ['naval', 'architecture'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['naval-architecture']
+                            },
+                            'bioinformatics': {
+                                'core_tags': ['bioinformatics'],
+                                'general_tags': ['bio', 'informatics'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['bioinformatics']
+                            },
+                            'business': {
+                                'core_tags': ['business'],
+                                'general_tags': ['management', 'commerce'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['business']
+                            },
+                            'bba': {
+                                'core_tags': ['bba'],
+                                'general_tags': ['business', 'administration'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['bba']
+                            },
+                            'accounting': {
+                                'core_tags': ['accounting'],
+                                'general_tags': ['finance', 'business'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['accounting']
+                            },
+                            'tourism': {
+                                'core_tags': ['tourism'],
+                                'general_tags': ['hospitality', 'travel'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['tourism']
+                            },
+                            'hospitality-management': {
+                                'core_tags': ['hospitality-management'],
+                                'general_tags': ['hospitality', 'management'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['hospitality-management']
+                            },
+                            'social-sciences': {
+                                'core_tags': ['social-sciences'],
+                                'general_tags': ['social', 'sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['social-sciences']
+                            },
+                            'mass-communication': {
+                                'core_tags': ['mass-communication'],
+                                'general_tags': ['media', 'communication'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['mass-communication']
+                            },
+                            'public-administration': {
+                                'core_tags': ['public-administration'],
+                                'general_tags': ['public', 'administration'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['public-administration']
+                            },
+                            'psychology': {
+                                'core_tags': ['psychology'],
+                                'general_tags': ['behavioral', 'mental'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['psychology']
+                            },
+                            'humanities': {
+                                'core_tags': ['humanities'],
+                                'general_tags': ['arts', 'culture'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['humanities']
+                            },
+                            'english-literature': {
+                                'core_tags': ['english-literature'],
+                                'general_tags': ['english', 'literature'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['english-literature']
+                            },
+                            'industrial-design': {
+                                'core_tags': ['industrial-design'],
+                                'general_tags': ['industrial', 'design'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['industrial-design']
+                            },
+                            'natural-sciences': {
+                                'core_tags': ['natural-sciences'],
+                                'general_tags': ['natural', 'sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['natural-sciences']
+                            },
+                            'mathematics': {
+                                'core_tags': ['mathematics'],
+                                'general_tags': ['math', 'computation'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['mathematics']
+                            },
+                            'environmental-science': {
+                                'core_tags': ['environmental-science'],
+                                'general_tags': ['environmental', 'science'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['environmental-science']
+                            },
+                            'biotechnology': {
+                                'core_tags': ['biotechnology'],
+                                'general_tags': ['bio', 'technology'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['biotechnology']
+                            },
+                            'food-science': {
+                                'core_tags': ['food-science'],
+                                'general_tags': ['food', 'science'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['food-science']
+                            },
+                            'agriculture': {
+                                'core_tags': ['agriculture'],
+                                'general_tags': ['farming', 'crops'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['agriculture']
+                            },
+                            'law': {
+                                'core_tags': ['law'],
+                                'general_tags': ['legal', 'justice'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['law']
+                            },
+                            'llb': {
+                                'core_tags': ['llb'],
+                                'general_tags': ['law', 'legal'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['llb']
+                            },
+                            'medicine': {
+                                'core_tags': ['medicine'],
+                                'general_tags': ['medical', 'healthcare'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['medicine']
+                            },
+                            'mbbs': {
+                                'core_tags': ['mbbs'],
+                                'general_tags': ['medicine', 'medical'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['mbbs']
+                            },
+                            'health-sciences': {
+                                'core_tags': ['health-sciences'],
+                                'general_tags': ['health', 'sciences'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['health-sciences']
+                            },
+                            'nutrition': {
+                                'core_tags': ['nutrition'],
+                                'general_tags': ['diet', 'health'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['nutrition']
+                            },
+                            'dietetics': {
+                                'core_tags': ['dietetics'],
+                                'general_tags': ['diet', 'nutrition'],
+                                'exclusion_tags': [],
+                                'boost_tags': ['dietetics']
                             }
                         }
                         
@@ -1067,4 +1511,4 @@ def get_stats():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True, port=5000) 
+    app.run(debug=True, port=5000)
