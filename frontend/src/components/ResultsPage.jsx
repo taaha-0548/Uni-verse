@@ -78,16 +78,21 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
     return true;
   });
 
-  // Sort the filtered offerings
+   // Sort the filtered offerings
   const filteredAndSortedOfferings = (() => {
-    // If sorting by priority (backend order), preserve original ordering
-    if (sortBy === 'priority') {
-      const sorted = [...filteredOfferings].sort((a, b) => a.originalIndex - b.originalIndex);
-      return sortOrder === 'desc' ? sorted : sorted.reverse();
-    }
-    
-    // For all other sorts, create a new sorted array
-    return [...filteredOfferings].sort((a, b) => {
+    // Always sort by match score primarily, then by interest matches
+    const sorted = [...filteredOfferings].sort((a, b) => {
+      // First, check if we're sorting by priority (Best Match)
+      if (sortBy === 'priority') {
+        // Priority is determined by match_score which includes interest matching
+        const scoreDiff = b.match_score - a.match_score;
+        if (scoreDiff !== 0) return scoreDiff;
+        
+        // If scores are equal, maintain original backend order
+        return a.originalIndex - b.originalIndex;
+      }
+      
+      // Handle other sorting options
       let aValue, bValue;
       
       switch (sortBy) {
@@ -95,11 +100,11 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
         case 'match':
           aValue = a.match_score;
           bValue = b.match_score;
-          break;
+          return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
         case 'fees':
           aValue = a.annual_fee;
           bValue = b.annual_fee;
-          break;
+          return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
         case 'minScore':
           if (studentData) {
             const studentScore = Math.max(studentData.sscPercentage || 0, studentData.hscPercentage || 0);
@@ -113,13 +118,13 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
           
           aValue = a.min_score_pct;
           bValue = b.min_score_pct;
-          break;
+          return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
         default:
-          return 0;
+          return a.originalIndex - b.originalIndex;
       }
-      
-      return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
     });
+    
+    return sorted;
   })();
 
   // Extract unique locations for filter dropdown
@@ -358,6 +363,48 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                 </div>
               </div>
             </div>
+
+            {/* Check if student's interests are available in preferred location */}
+            {(() => {
+              const noDirectInterestInLocation = (() => {
+                if (!studentData || !studentData.preferredLocation || !studentData.interests) return false;
+
+                // Check if any programs in preferred location match student's direct interests
+                const interestsInLocation = matchedOfferings.filter(offering => {
+                  const matchesLocation = offering.campus.city.toLowerCase().includes(studentData.preferredLocation.toLowerCase());
+
+                  if (!matchesLocation) return false;
+
+                  // Check if program matches any of student's interests
+                  const programTags = offering.tags || [];
+                  const studentInterests = studentData.interests || [];
+
+                  return studentInterests.some(interest => 
+                    programTags.some(tag => 
+                      tag.toLowerCase().includes(interest.toLowerCase()) || 
+                      offering.program_name.toLowerCase().includes(interest.toLowerCase())
+                    )
+                  );
+                });
+
+                return interestsInLocation.length === 0;
+              })();
+
+              if (noDirectInterestInLocation) {
+                const primaryInterest = studentData.interestPriorities ? 
+                  studentData.interestPriorities[0]?.interest : 
+                  studentData.interests[0];
+
+                return (
+                  <div className="mb-6 bg-yellow-50 border border-yellow-200 text-yellow-800 px-4 py-3 rounded-lg">
+                    <strong>Note:</strong> Your interested program
+                    <span className="font-semibold"> "{primaryInterest}"</span> is not available in
+                    <span className="font-semibold"> "{studentData.preferredLocation}"</span>. Showing other similar programs instead.
+                  </div>
+                );
+              }
+              return null;
+            })()}
 
             {/* Program Offering Cards */}
             <div className="space-y-4">
