@@ -1,62 +1,84 @@
 
 
-## **For Each University, Collect:**
+# **Uni-verse Data Requirements**
 
-### 1. **University Information**
-- University Name
-- Sector (Public, Private, or Semi-Government)
-
----
-
-### 2. **Campus Information**
-- For each campus:
-  - City (where the campus is located)
+This document lists all the data points to collect for every university in the Uni-verse platform.
+Each section applies to **all universities**, **all campuses**, and **all programs** to ensure consistent data and accurate recommendations.
 
 ---
 
-### 3. **Programs Offered**
-- For each program:
-  - Program Name (e.g., BS Computer Science, MBBS)
-  - Discipline/Field (e.g., Engineering, Medicine, Computer Science)
-  - Program Code (if available)
+## **1. University Information**
+
+* **University Name**
+* **Sector** — Public, Private, or Semi-Government
+* **Established Year**
+* **Official Website URL**
+* **Contact Information**
+
+  * Phone number
+  * Email address
+  * Social media links (Facebook, Instagram, LinkedIn, Twitter/X, etc.)
+*
 
 ---
 
-### 4. **Program Offerings (per campus)**
-- For each program at each campus:
-  - Minimum required percentage (e.g., 60%)
-  - Type of minimum score (e.g., SSC/HSC, IBCC)
-  - Annual tuition fee
-  - Is hostel available? (Yes/No)
+## **2. Campus Information**
+
+For each campus:
+
+* **Campus Name** (e.g., Main Campus, Lahore Campus)
+* **City**
+* **Full Address**
+* **Hostel Availability** (Yes/No)
+* **Campus Images / Virtual Tour Link** (if available)
 
 ---
 
-### 5. **Eligibility & Admission Requirements**
-- For each program offering:
-  - Accepted Boards (e.g., BISE Karachi, A-Levels, etc.)
-  - Accepted Subject Groups (e.g., Pre-Medical, Pre-Engineering, ICS, ICom, IA)
-  - Required Entrance Tests (e.g., MDCAT, ECAT, NTS, etc.) and minimum scores
+## **3. Programs Offered**
+
+For each program:
+
+* **Program Name** (e.g., BS Computer Science, MBBS)
+* **Discipline/Field** (e.g., Engineering, Medicine, Computer Science)
+* **Program Code** (if available)
+* **Program Duration** (e.g., 4 years, 5 years)
 
 ---
 
-### 6. **Tags/Keywords**
-- For each program offering:
-  - Relevant tags/keywords (e.g., “computer-science”, “engineering”, “mbbs”, etc.)
+## **4. Program Offerings (per campus)**
+
+For each program at each campus:
+
+* **Minimum Required Percentage** (e.g., 60%)
+* **Type of Minimum Score** (SSC/HSC, IBCC, Merit Score, etc.)
+* **Annual Tuition Fee**
+* **Admission Fee** (if separate)
+* **Application Deadlines** (for future use)
+* **Hostel Availability** (Yes/No)
+* **Transport Availability** (Yes/No)
 
 ---
 
-## **Summary Table**
+## **5. Eligibility & Admission Requirements**
 
-| Section                | What to Collect                                                                 |
-|------------------------|---------------------------------------------------------------------------------|
-| University             | Name, Sector                                                                    |
-| Campus                 | City (for each campus)                                                          |
-| Program                | Name, Discipline, Code (for each program)                                       |
-| Program Offering       | Min % required, Score type, Annual fee, Hostel (for each program at each campus)|
-| Admission Requirements | Accepted boards, subject groups, entrance tests & scores (per offering)         |
-| Tags                   | Keywords/tags for each program offering                                         |
+For each program offering:
+
+* **Accepted Boards** (e.g., BISE Karachi, A-Levels, IB, etc.)
+* **Accepted Subject Groups** (e.g., Pre-Medical, Pre-Engineering, ICS, ICom, IA)
+* **Required Entrance Tests** (e.g., MDCAT, ECAT, NTS, SAT, etc.)
+
+  * Minimum required scores per test
+* **Interview/Portfolio Requirement** (Yes/No, details if Yes)
 
 ---
 
-**This is the information you need to ask your data person to collect for each university.**  
-No need to worry about database structure—just make sure you have all these details for every university, campus, and program offered!
+## **6. Tags / Keywords**
+
+For each program offering:
+
+* **Relevant Tags/Keywords** (e.g., “computer-science”, “engineering”, “mbbs”)
+* **Popular Category Tag** (e.g., “Top in Engineering”, “Scholarship Available”)
+* **Trending Program Flag** (based on platform search analytics)
+
+---
+
