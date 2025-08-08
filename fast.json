@@ -1,0 +1,1976 @@
+{
+    "university": {
+        "name": "FAST National University of Computing and Emerging Sciences",
+        "sector": "Private"
+    },
+    "campuses": [
+        {
+            "campus_name": "Karchi  Campus",
+            "city": "Karachi"
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "city": "Islamabad"
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "city": "Lahore"
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "city": "Peshawar"
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "city": "Faislabad"
+        },
+        {
+            "campus_name": "Multan Campus",
+            "city": "Multan"
+        }
+    ],
+    "program_offerings": [
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(DS) – Data Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BBA – Business Administration",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(DS) – Data Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BBA – Business Administration",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CV) – Civil Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(DS) – Data Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": false
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BBA – Business Administration",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "min_score_pct": 50.0,
+            "min_score_type": "ssc_hsc",
+            "annual_fee": 360000,
+            "hostel_available": true
+        }
+    ],
+    "program_offering_boards": [
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(DS) – Data Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BBA – Business Administration",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(DS) – Data Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BBA – Business Administration",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CV) – Civil Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(DS) – Data Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BBA – Business Administration",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "boards": [
+                "Pakistani Boards",
+                "A-Levels/equivalent"
+            ]
+        }
+    ],
+    "program_offering_groups": [
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(DS) – Data Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BBA – Business Administration",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(DS) – Data Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BBA – Business Administration",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CV) – Civil Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(DS) – Data Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BBA – Business Administration",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "subject_groups": [
+                "Pre-Engineering",
+                "ICS (Computer Science)"
+            ]
+        }
+    ],
+    "entrance_test_types": [
+        {
+            "name": "NED Entry Test",
+            "name2": "SAT",
+            "name3": "NTS"
+        }
+    ],
+    "program_offering_tests": [
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(DS) – Data Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BBA – Business Administration",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(DS) – Data Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BBA – Business Administration",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CV) – Civil Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(DS) – Data Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BBA – Business Administration",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "test_name": [
+                "NED Entry Test",
+                "SAT",
+                "NTS"
+            ]
+        }
+    ],
+
+    "tags": [
+        {
+            "name": "Buisness Administration"
+        },
+        {
+            "name": "Accounting and Finance"
+        },
+        {
+            "name": "Artificial Intelligence"
+        },
+        {
+            "name": "Buisness Analytics"
+        },
+        {
+            "name": "Civil Engineering"
+        },
+        {
+            "name": "Computer Engineering"
+        },
+        {
+            "name": "Computer Science"
+        },
+        {
+            "name": "Cyber Security"
+        },
+        {
+            "name": "Data Science"
+        },
+        {
+            "name": "Electrical Engineering"
+        },
+        {
+            "name": "Financial Technology"
+        },
+        {
+            "name": "Software Engineering"
+        },
+        {
+            "name":"Engineering"
+        }
+    ],
+
+    "program_offering_tags":[
+         {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "tags":[
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(BA) – Business Analytics",
+           "tags":[
+            "Buisness Analytics"
+           ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "tags":[
+            "Engineering",
+            "Computer Engineering"
+           ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "tags":[
+                "Computer Science"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(CY) – Cyber Security",
+             "tags":[
+                "Cyber Security"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(DS) – Data Science",
+            "tags":[
+                "Data Science"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "tags":[
+                "Engineering",
+                "Electrical Engineering"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(FT) – Financial Technology",
+           "tags":[
+                "Financial Technology"
+            ]
+        },
+        {
+            "campus_name": "Karachi Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "tags":[
+                "Software Engineering"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BBA – Business Administration",
+             "tags":[
+                "Buisness Administration"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "tags":[
+                "Accounting and Finance"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "tags": [
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "tags": [
+                "Buisness Analytics"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "tags": [
+                "Computer Engineering"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "tags": [
+                "Computer Science"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "tags": [
+                "Cyber Security"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(DS) – Data Science",
+            "tags": [
+                "Data Science"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "tags": [
+               "Engineering",
+               "Electrical Engineering"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "tags": [
+               "Financial Technology"
+            ]
+        },
+        {
+            "campus_name": "Islamabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "tags": [
+               "Software Engineering"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BBA – Business Administration",
+            "tags": [
+                "Buisness Administration"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AF) – Accounting and Finance",
+            "tags": [
+                "Accounting and Finance"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "tags": [
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "tags": [
+                "Buisness Analytics"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CV) – Civil Engineering",
+            "tags": [
+               "Civil Engineering"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "tags": [
+                "Computer Science"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(CY) – Cyber Security",
+            "tags": [
+                "Cyber Security"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(DS) – Data Science",
+            "tags": [
+                "Data Science"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "tags": [
+                "Electrical Engineering"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "tags": [
+                "Financial Technology"
+            ]
+        },
+        {
+            "campus_name": "Lahore Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "tags": [
+                "Software Engineering"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "tags": [
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "tags": [
+                "Computer Science"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "tags": [
+                "Computer Engineering"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "tags": [
+               "Electrical Engineering"
+            ]
+        },
+        {
+            "campus_name": "Peshawar Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "tags": [
+                "Software Engineering"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "tags": [
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "tags": [
+                "Computer Science"
+            ]
+        },
+        {
+            "campus_name": "Multan Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "tags": [
+                "Software Engineering"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BBA – Business Administration",
+            "tags": [
+                "Buisness Administration"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(AI) – Artificial Intelligence",
+            "tags": [
+                "Artificial Intelligence"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(BA) – Business Analytics",
+            "tags": [
+                "Buisness Analytics"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CPE) – Computer Engineering",
+            "tags": [
+                "Computer Engineering"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(CS) – Computer Science",
+            "tags": [
+                "Computer Science"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(EE) – Electrical Engineering",
+            "tags": [
+                "Electrical Engineering"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(FT) – Financial Technology",
+            "tags": [
+                "Financial Technology"
+            ]
+        },
+        {
+            "campus_name": "Chiniot-Faislabad Campus",
+            "program_name": "BS(SE) – Software Engineering",
+            "tags": [
+               "Software Engineering"
+            ]
+        }
+    ]
+}
+
