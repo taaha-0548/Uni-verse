@@ -1,0 +1,84 @@
+{
+  "university": {
+    "name": "UNIVERSITY_NAME",
+    "sector": "public"
+  },
+  "campuses": [
+    {
+      "campus_name": "Main Campus",
+      "city": "CITY_NAME"
+    }
+  ],
+  "programs": [
+    {
+      "name": "PROGRAM_NAME",
+      "discipline": "DISCIPLINE",
+      "code": null
+    }
+  ],
+  "program_offerings": [
+    {
+      "campus_name": "Main Campus",
+      "program_name": "PROGRAM_NAME",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 100000,
+      "hostel_available": false
+    }
+  ],
+  "program_offering_boards": [
+    {
+      "campus_name": "Main Campus",
+      "program_name": "PROGRAM_NAME",
+      "boards": [
+        "BISE Lahore",
+        "Other Pakistani Boards"
+      ]
+    }
+  ],
+  "program_offering_groups": [
+    {
+      "campus_name": "Main Campus",
+      "program_name": "PROGRAM_NAME",
+      "subject_groups": [
+        "Pre-Engineering",
+        "Pre-Medical",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    }
+  ],
+  "entrance_test_types": [
+    {
+      "name": "ENTRANCE_TEST_NAME"
+    }
+  ],
+  "program_offering_tests": [
+    {
+      "campus_name": "Main Campus",
+      "program_name": "PROGRAM_NAME",
+      "test_name": "ENTRANCE_TEST_NAME"
+    }
+  ],
+  "tags": [
+    {
+      "name": "tag-name"
+    }
+  ],
+  "program_offering_tags": [
+    {
+      "campus_name": "Main Campus",
+      "program_name": "PROGRAM_NAME",
+      "tags": [
+        "relevant-tag-1",
+        "relevant-tag-2"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "ENTRANCE_TEST_NAME"
+    }
+  ]
+} 

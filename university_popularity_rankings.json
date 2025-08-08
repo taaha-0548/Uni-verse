@@ -1,0 +1,172 @@
+{
+  "popularity_rankings_by_program": {
+    "Civil Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Civil Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Electrical Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Electrical Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Mechanical Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Mechanical Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Chemical Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Chemical Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Software Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Software Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Computer Science": [
+      {
+        "rank": 1,
+        "program_name": "BS – Computer Science",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Data Science": [
+      {
+        "rank": 1,
+        "program_name": "BS – Data Science",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Cyber Security": [
+      {
+        "rank": 1,
+        "program_name": "BS – Cyber Security",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Architecture": [
+      {
+        "rank": 1,
+        "program_name": "B.ARCH – Architecture",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Computational Finance": [
+      {
+        "rank": 1,
+        "program_name": "BS – Computational Finance",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Economics & Finance": [
+      {
+        "rank": 1,
+        "program_name": "BS – Economics & Finance",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Physics": [
+      {
+        "rank": 1,
+        "program_name": "BS – Physics",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Chemistry": [
+      {
+        "rank": 1,
+        "program_name": "BS – Chemistry",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Textile Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Textile Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Petroleum Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Petroleum Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Bio-medical Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Bio-medical Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Automotive Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Automotive Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Materials / Metallurgical Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Materials / Metallurgical Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Manufacturing / Industrial Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Manufacturing / Industrial Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Telecommunication Engineering": [
+      {
+        "rank": 1,
+        "program_name": "BE – Telecommunication Engineering",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ],
+    "Urban & Regional Planning": [
+      {
+        "rank": 1,
+        "program_name": "BE – Urban & Regional Planning",
+        "city": "Karachi",
+        "sector": "public"
+      }
+    ]
+  }
+}

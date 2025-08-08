@@ -28,67 +28,12 @@
       "code": null
     },
     {
-      "name": "BE – Electrical Engineering",
+      "name": "BE – Civil Engineering (Specialisation in Construction)",
       "discipline": "Engineering",
       "code": null
     },
     {
-      "name": "BE – Mechanical Engineering",
-      "discipline": "Engineering",
-      "code": null
-    },
-    {
-      "name": "BE – Chemical Engineering",
-      "discipline": "Engineering",
-      "code": null
-    },
-    {
-      "name": "BE – Software Engineering",
-      "discipline": "Engineering",
-      "code": null
-    },
-    {
-      "name": "BS – Computer Science",
-      "discipline": "Computer Science",
-      "code": null
-    },
-    {
-      "name": "BS – Data Science",
-      "discipline": "Data Science",
-      "code": null
-    },
-    {
-      "name": "BS – Cyber Security",
-      "discipline": "Computer Science",
-      "code": null
-    },
-    {
-      "name": "B.ARCH – Architecture",
-      "discipline": "Architecture",
-      "code": null
-    },
-    {
-      "name": "BS – Computational Finance",
-      "discipline": "Finance",
-      "code": null
-    },
-    {
-      "name": "BS – Economics & Finance",
-      "discipline": "Economics",
-      "code": null
-    },
-    {
-      "name": "BS – Physics",
-      "discipline": "Natural Sciences",
-      "code": null
-    },
-    {
-      "name": "BS – Chemistry",
-      "discipline": "Natural Sciences",
-      "code": null
-    },
-    {
-      "name": "BE – Textile Engineering",
+      "name": "BE – Civil Engineering (Specialisation in Urban)",
       "discipline": "Engineering",
       "code": null
     },
@@ -98,33 +43,168 @@
       "code": null
     },
     {
-      "name": "BE – Bio-medical Engineering",
+      "name": "BE – Mechanical Engineering",
       "discipline": "Engineering",
       "code": null
     },
     {
-      "name": "BE – Automotive Engineering",
+      "name": "BE – Industrial & Manufacturing Engineering",
       "discipline": "Engineering",
       "code": null
     },
     {
-      "name": "BE – Materials / Metallurgical Engineering",
+      "name": "BE – Textile Engineering",
       "discipline": "Engineering",
       "code": null
     },
     {
-      "name": "BE – Manufacturing / Industrial Engineering",
+      "name": "BE – Mechanical Engineering (Specialisation in Automotive)",
       "discipline": "Engineering",
       "code": null
     },
     {
-      "name": "BE – Telecommunication Engineering",
+      "name": "BE – Electrical Engineering",
       "discipline": "Engineering",
       "code": null
     },
     {
-      "name": "BE – Urban & Regional Planning",
-      "discipline": "Planning",
+      "name": "BE – Computer Systems Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Electronic Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Telecommunications Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Biomedical Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Software Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Chemical Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Polymer & Petrochemical Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Materials Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Metallurgical Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BE – Food Engineering",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science",
+      "discipline": "Computer Science",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (Specialisation: Artificial Intelligence)",
+      "discipline": "Computer Science",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (Specialisation: Data Science)",
+      "discipline": "Data Science",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (Specialisation: Cyber Security)",
+      "discipline": "Computer Science",
+      "code": null
+    },
+    {
+      "name": "BS – Textile Sciences",
+      "discipline": "Textile Sciences",
+      "code": null
+    },
+    {
+      "name": "BS – Development Studies",
+      "discipline": "Development Studies",
+      "code": null
+    },
+    {
+      "name": "BS – Computational Finance",
+      "discipline": "Computational Finance",
+      "code": null
+    },
+    {
+      "name": "BS – Physics",
+      "discipline": "Physics",
+      "code": null
+    },
+    {
+      "name": "BS – Chemistry",
+      "discipline": "Chemistry",
+      "code": null
+    },
+    {
+      "name": "BS – English Linguistics",
+      "discipline": "English Linguistics",
+      "code": null
+    },
+    {
+      "name": "BS – Economics & Finance",
+      "discipline": "Economics & Finance",
+      "code": null
+    },
+    {
+      "name": "BS – Management Sciences",
+      "discipline": "Management Sciences",
+      "code": null
+    },
+    {
+      "name": "B.ARCH – Architecture",
+      "discipline": "Architecture",
+      "code": null
+    },
+    {
+      "name": "BE – Civil Engineering (TIEST)",
+      "discipline": "Engineering",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (TIEST)",
+      "discipline": "Computer Science",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (TIEST Specialisation: Artificial Intelligence)",
+      "discipline": "Computer Science",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (TIEST Specialisation: Cyber Security)",
+      "discipline": "Computer Science",
+      "code": null
+    },
+    {
+      "name": "BS – Computer Science (TIEST Specialisation: Gaming and Animation)",
+      "discipline": "Computer Science",
       "code": null
     }
   ],
@@ -132,522 +212,370 @@
     {
       "campus_name": "Main Campus",
       "program_name": "BE – Civil Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Electrical Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Civil Engineering (Specialisation in Construction)",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Mechanical Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Civil Engineering (Specialisation in Urban)",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Chemical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Software Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Computer Science",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Data Science",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Cyber Security",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "B.ARCH – Architecture",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Computational Finance",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Economics & Finance",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Physics",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Chemistry",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Textile Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
       "program_name": "BE – Petroleum Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Mechanical Engineering",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Automotive Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Industrial & Manufacturing Engineering",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Textile Engineering",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Mechanical Engineering (Specialisation in Automotive)",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Electrical Engineering",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Computer Systems Engineering",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electronic Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Telecommunications Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Biomedical Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Software Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Chemical Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Polymer & Petrochemical Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Materials Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Metallurgical Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Food Engineering",
+      "min_score_pct": 57.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 128950,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Artificial Intelligence)",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 128950,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Data Science)",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 128950,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Cyber Security)",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 128950,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Textile Sciences",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Development Studies",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computational Finance",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 128950,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Physics",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Chemistry",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 121690,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – English Linguistics",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Economics & Finance",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Management Sciences",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 118090,
+      "hostel_available": false
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "B.ARCH – Architecture",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 122490,
       "hostel_available": false
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Civil Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Electrical Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Mechanical Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Chemical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Software Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "City Campus",
       "program_name": "BS – Computer Science",
-      "min_score_pct": 60.0,
+      "min_score_pct": 50.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 128950,
       "hostel_available": false
     },
     {
       "campus_name": "City Campus",
-      "program_name": "BS – Data Science",
-      "min_score_pct": 60.0,
+      "program_name": "BS – Management Sciences",
+      "min_score_pct": 50.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
-      "campus_name": "City Campus",
-      "program_name": "BS – Cyber Security",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "B.ARCH – Architecture",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Computational Finance",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Economics & Finance",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Physics",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Chemistry",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
+      "campus_name": "LEJ Campus",
       "program_name": "BE – Textile Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Automotive Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Civil Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Electrical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Mechanical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "LEJ Campus",
       "program_name": "BE – Chemical Engineering",
-      "min_score_pct": 60.0,
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "LEJ Campus",
-      "program_name": "BE – Software Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BS – Textile Sciences",
+      "min_score_pct": 50.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computer Science",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Data Science",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Cyber Security",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "B.ARCH – Architecture",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computational Finance",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Economics & Finance",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Physics",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Chemistry",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Textile Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Automotive Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
-      "hostel_available": false
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "min_score_pct": 60.0,
-      "min_score_type": "ssc_hsc",
-      "annual_fee": 61800,
+      "annual_fee": 118090,
       "hostel_available": false
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BE – Civil Engineering",
-      "min_score_pct": 60.0,
+      "program_name": "BE – Civil Engineering (TIEST)",
+      "min_score_pct": 57.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 58000,
-      "hostel_available": false
+      "annual_fee": 136190,
+      "hostel_available": true
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BS – Computer Science",
-      "min_score_pct": 60.0,
+      "program_name": "BS – Computer Science (TIEST)",
+      "min_score_pct": 50.0,
       "min_score_type": "ssc_hsc",
-      "annual_fee": 58000,
-      "hostel_available": false
+      "annual_fee": 136190,
+      "hostel_available": true
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Artificial Intelligence)",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 136190,
+      "hostel_available": true
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Cyber Security)",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 136190,
+      "hostel_available": true
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Gaming and Animation)",
+      "min_score_pct": 50.0,
+      "min_score_type": "ssc_hsc",
+      "annual_fee": 136190,
+      "hostel_available": true
     }
   ],
   "program_offering_boards": [
@@ -661,7 +589,23 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Electrical Engineering",
+      "program_name": "BE – Civil Engineering (Specialisation in Construction)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Civil Engineering (Specialisation in Urban)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Petroleum Engineering",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -677,7 +621,63 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Chemical Engineering",
+      "program_name": "BE – Industrial & Manufacturing Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Textile Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Mechanical Engineering (Specialisation in Automotive)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electrical Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Computer Systems Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electronic Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Telecommunications Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Biomedical Engineering",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -693,6 +693,46 @@
     },
     {
       "campus_name": "Main Campus",
+      "program_name": "BE – Chemical Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Polymer & Petrochemical Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Materials Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Metallurgical Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Food Engineering",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
       "program_name": "BS – Computer Science",
       "boards": [
         "BISE Karachi",
@@ -701,7 +741,7 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BS – Data Science",
+      "program_name": "BS – Computer Science (Specialisation: Artificial Intelligence)",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -709,7 +749,7 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BS – Cyber Security",
+      "program_name": "BS – Computer Science (Specialisation: Data Science)",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -717,7 +757,23 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "B.ARCH – Architecture",
+      "program_name": "BS – Computer Science (Specialisation: Cyber Security)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Textile Sciences",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Development Studies",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -726,14 +782,6 @@
     {
       "campus_name": "Main Campus",
       "program_name": "BS – Computational Finance",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Economics & Finance",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -757,7 +805,7 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Textile Engineering",
+      "program_name": "BS – English Linguistics",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -765,7 +813,7 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Petroleum Engineering",
+      "program_name": "BS – Economics & Finance",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -773,7 +821,7 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Bio-medical Engineering",
+      "program_name": "BS – Management Sciences",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -781,39 +829,7 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Automotive Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Urban & Regional Planning",
+      "program_name": "B.ARCH – Architecture",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -845,14 +861,6 @@
     },
     {
       "campus_name": "City Campus",
-      "program_name": "BE – Chemical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
       "program_name": "BE – Software Engineering",
       "boards": [
         "BISE Karachi",
@@ -869,143 +877,15 @@
     },
     {
       "campus_name": "City Campus",
-      "program_name": "BS – Data Science",
+      "program_name": "BS – Management Sciences",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
       ]
     },
     {
-      "campus_name": "City Campus",
-      "program_name": "BS – Cyber Security",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "B.ARCH – Architecture",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Computational Finance",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Economics & Finance",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Physics",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Chemistry",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
+      "campus_name": "LEJ Campus",
       "program_name": "BE – Textile Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Automotive Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Civil Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Electrical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Mechanical Engineering",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -1021,135 +901,7 @@
     },
     {
       "campus_name": "LEJ Campus",
-      "program_name": "BE – Software Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computer Science",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Data Science",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Cyber Security",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "B.ARCH – Architecture",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computational Finance",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Economics & Finance",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Physics",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Chemistry",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Textile Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Automotive Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "boards": [
-        "BISE Karachi",
-        "Other Pakistani Boards"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Urban & Regional Planning",
+      "program_name": "BS – Textile Sciences",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -1157,7 +909,7 @@
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BE – Civil Engineering",
+      "program_name": "BE – Civil Engineering (TIEST)",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -1165,7 +917,31 @@
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BS – Computer Science",
+      "program_name": "BS – Computer Science (TIEST)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Artificial Intelligence)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Cyber Security)",
+      "boards": [
+        "BISE Karachi",
+        "Other Pakistani Boards"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Gaming and Animation)",
       "boards": [
         "BISE Karachi",
         "Other Pakistani Boards"
@@ -1182,100 +958,14 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Electrical Engineering",
+      "program_name": "BE – Civil Engineering (Specialisation in Construction)",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Mechanical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Chemical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Software Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Computer Science",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Data Science",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Cyber Security",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "B.ARCH – Architecture",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Computational Finance",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Economics & Finance",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Physics",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Chemistry",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Textile Engineering",
+      "program_name": "BE – Civil Engineering (Specialisation in Urban)",
       "subject_groups": [
         "Pre-Engineering"
       ]
@@ -1289,44 +979,250 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Bio-medical Engineering",
+      "program_name": "BE – Mechanical Engineering",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Automotive Engineering",
+      "program_name": "BE – Industrial & Manufacturing Engineering",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
+      "program_name": "BE – Textile Engineering",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
+      "program_name": "BE – Mechanical Engineering (Specialisation in Automotive)",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Telecommunication Engineering",
+      "program_name": "BE – Electrical Engineering",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Urban & Regional Planning",
+      "program_name": "BE – Computer Systems Engineering",
       "subject_groups": [
         "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electronic Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Telecommunications Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Biomedical Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Software Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Chemical Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Polymer & Petrochemical Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Materials Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Metallurgical Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Food Engineering",
+      "subject_groups": [
+        "Pre-Engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Artificial Intelligence)",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Data Science)",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Cyber Security)",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Textile Sciences",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Development Studies",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computational Finance",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Physics",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Chemistry",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – English Linguistics",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Economics & Finance",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Management Sciences",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "B.ARCH – Architecture",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
       ]
     },
     {
@@ -1352,13 +1248,6 @@
     },
     {
       "campus_name": "City Campus",
-      "program_name": "BE – Chemical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
       "program_name": "BE – Software Engineering",
       "subject_groups": [
         "Pre-Engineering"
@@ -1368,140 +1257,27 @@
       "campus_name": "City Campus",
       "program_name": "BS – Computer Science",
       "subject_groups": [
+        "Pre-Medical",
         "Pre-Engineering",
-        "ICS"
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
       ]
     },
     {
       "campus_name": "City Campus",
-      "program_name": "BS – Data Science",
+      "program_name": "BS – Management Sciences",
       "subject_groups": [
+        "Pre-Medical",
         "Pre-Engineering",
-        "ICS",
-        "ICom"
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
       ]
     },
     {
-      "campus_name": "City Campus",
-      "program_name": "BS – Cyber Security",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "B.ARCH – Architecture",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Computational Finance",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Economics & Finance",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Physics",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Chemistry",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
+      "campus_name": "LEJ Campus",
       "program_name": "BE – Textile Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Automotive Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Civil Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Electrical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Mechanical Engineering",
       "subject_groups": [
         "Pre-Engineering"
       ]
@@ -1515,145 +1291,64 @@
     },
     {
       "campus_name": "LEJ Campus",
-      "program_name": "BE – Software Engineering",
+      "program_name": "BS – Textile Sciences",
       "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computer Science",
-      "subject_groups": [
+        "Pre-Medical",
         "Pre-Engineering",
-        "ICS"
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
       ]
     },
     {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Data Science",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Cyber Security",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "B.ARCH – Architecture",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computational Finance",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Economics & Finance",
-      "subject_groups": [
-        "Pre-Engineering",
-        "ICS",
-        "ICom"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Physics",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Chemistry",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Textile Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Automotive Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "subject_groups": [
-        "Pre-Engineering"
-      ]
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Urban & Regional Planning",
+      "campus_name": "TIEST",
+      "program_name": "BE – Civil Engineering (TIEST)",
       "subject_groups": [
         "Pre-Engineering"
       ]
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BE – Civil Engineering",
+      "program_name": "BS – Computer Science (TIEST)",
       "subject_groups": [
-        "Pre-Engineering"
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
       ]
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BS – Computer Science",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Artificial Intelligence)",
       "subject_groups": [
+        "Pre-Medical",
         "Pre-Engineering",
-        "ICS"
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Cyber Security)",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Gaming and Animation)",
+      "subject_groups": [
+        "Pre-Medical",
+        "Pre-Engineering",
+        "ICS (Computer Science)",
+        "ICom (Commerce)",
+        "IA (Arts)"
       ]
     }
   ],
@@ -1666,392 +1361,232 @@
     {
       "campus_name": "Main Campus",
       "program_name": "BE – Civil Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Electrical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Civil Engineering (Specialisation in Construction)",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Mechanical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Chemical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Software Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Computer Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Data Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Cyber Security",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "B.ARCH – Architecture",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Computational Finance",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Economics & Finance",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Physics",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BS – Chemistry",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "Main Campus",
-      "program_name": "BE – Textile Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Civil Engineering (Specialisation in Urban)",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
       "program_name": "BE – Petroleum Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Mechanical Engineering",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Automotive Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Industrial & Manufacturing Engineering",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Textile Engineering",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Mechanical Engineering (Specialisation in Automotive)",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Electrical Engineering",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Computer Systems Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electronic Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Telecommunications Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Biomedical Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Software Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Chemical Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Polymer & Petrochemical Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Materials Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Metallurgical Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Food Engineering",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Artificial Intelligence)",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Data Science)",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Cyber Security)",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Textile Sciences",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Development Studies",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computational Finance",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Physics",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Chemistry",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – English Linguistics",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Economics & Finance",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Management Sciences",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "B.ARCH – Architecture",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Civil Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Electrical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Mechanical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Chemical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "City Campus",
       "program_name": "BE – Software Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "City Campus",
       "program_name": "BS – Computer Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "City Campus",
-      "program_name": "BS – Data Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BS – Management Sciences",
+      "test_name": "NED Entry Test"
     },
     {
-      "campus_name": "City Campus",
-      "program_name": "BS – Cyber Security",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "B.ARCH – Architecture",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Computational Finance",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Economics & Finance",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Physics",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BS – Chemistry",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
+      "campus_name": "LEJ Campus",
       "program_name": "BE – Textile Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Automotive Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "City Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Civil Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Electrical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Mechanical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "LEJ Campus",
       "program_name": "BE – Chemical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "LEJ Campus",
-      "program_name": "BE – Software Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computer Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Data Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Cyber Security",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "B.ARCH – Architecture",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Computational Finance",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Economics & Finance",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Physics",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BS – Chemistry",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Textile Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Petroleum Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Bio-medical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Automotive Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Materials / Metallurgical Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Manufacturing / Industrial Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Telecommunication Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
-    },
-    {
-      "campus_name": "LEJ Campus",
-      "program_name": "BE – Urban & Regional Planning",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BS – Textile Sciences",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BE – Civil Engineering",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BE – Civil Engineering (TIEST)",
+      "test_name": "NED Entry Test"
     },
     {
       "campus_name": "TIEST",
-      "program_name": "BS – Computer Science",
-      "test_name": "NED Entry Test",
-      "min_score": 50.0
+      "program_name": "BS – Computer Science (TIEST)",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Artificial Intelligence)",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Cyber Security)",
+      "test_name": "NED Entry Test"
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Gaming and Animation)",
+      "test_name": "NED Entry Test"
     }
   ],
   "tags": [
@@ -2059,7 +1594,16 @@
       "name": "architecture"
     },
     {
+      "name": "artificial-intelligence"
+    },
+    {
+      "name": "biomedical-engineering"
+    },
+    {
       "name": "chemical-engineering"
+    },
+    {
+      "name": "chemistry"
     },
     {
       "name": "civil-engineering"
@@ -2071,10 +1615,16 @@
       "name": "computer-science"
     },
     {
+      "name": "computer-systems"
+    },
+    {
       "name": "cyber-security"
     },
     {
       "name": "data-science"
+    },
+    {
+      "name": "development-studies"
     },
     {
       "name": "economics"
@@ -2083,25 +1633,75 @@
       "name": "electrical-engineering"
     },
     {
+      "name": "electronic-engineering"
+    },
+    {
       "name": "engineering"
+    },
+    {
+      "name": "english-linguistics"
     },
     {
       "name": "finance"
     },
     {
+      "name": "food-engineering"
+    },
+    {
+      "name": "gaming-animation"
+    },
+    {
       "name": "ics"
+    },
+    {
+      "name": "industrial-manufacturing"
+    },
+    {
+      "name": "management-sciences"
+    },
+    {
+      "name": "materials-engineering"
     },
     {
       "name": "mechanical-engineering"
     },
     {
+      "name": "metallurgical-engineering"
+    },
+    {
+      "name": "petrochemical-engineering"
+    },
+    {
+      "name": "petroleum-engineering"
+    },
+    {
+      "name": "physics"
+    },
+    {
+      "name": "polymer-engineering"
+    },
+    {
       "name": "software-engineering"
+    },
+    {
+      "name": "telecommunications"
+    },
+    {
+      "name": "textile-sciences"
     }
   ],
   "program_offering_tags": [
     {
       "campus_name": "Main Campus",
       "program_name": "BE – Civil Engineering",
+  "tags": [
+        "engineering",
+        "civil-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Civil Engineering (Specialisation in Construction)",
       "tags": [
         "engineering",
         "civil-engineering"
@@ -2109,10 +1709,18 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Electrical Engineering",
+      "program_name": "BE – Civil Engineering (Specialisation in Urban)",
       "tags": [
         "engineering",
-        "electrical-engineering"
+        "civil-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Petroleum Engineering",
+      "tags": [
+        "engineering",
+        "petroleum-engineering"
       ]
     },
     {
@@ -2125,10 +1733,65 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BE – Chemical Engineering",
+      "program_name": "BE – Industrial & Manufacturing Engineering",
       "tags": [
         "engineering",
-        "chemical-engineering"
+        "industrial-manufacturing"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Textile Engineering",
+      "tags": [
+        "engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Mechanical Engineering (Specialisation in Automotive)",
+      "tags": [
+        "engineering",
+        "mechanical-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electrical Engineering",
+      "tags": [
+        "engineering",
+        "electrical-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Computer Systems Engineering",
+      "tags": [
+        "engineering",
+        "computer-systems"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Electronic Engineering",
+      "tags": [
+        "engineering",
+        "electronic-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Telecommunications Engineering",
+      "tags": [
+        "engineering",
+        "telecommunications"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Biomedical Engineering",
+      "tags": [
+        "engineering",
+        "biomedical-engineering"
       ]
     },
     {
@@ -2141,6 +1804,47 @@
     },
     {
       "campus_name": "Main Campus",
+      "program_name": "BE – Chemical Engineering",
+      "tags": [
+        "engineering",
+        "chemical-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Polymer & Petrochemical Engineering",
+      "tags": [
+        "engineering",
+        "polymer-engineering",
+        "petrochemical-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Materials Engineering",
+      "tags": [
+        "engineering",
+        "materials-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Metallurgical Engineering",
+      "tags": [
+        "engineering",
+        "metallurgical-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BE – Food Engineering",
+      "tags": [
+        "engineering",
+        "food-engineering"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
       "program_name": "BS – Computer Science",
       "tags": [
         "computer-science",
@@ -2149,23 +1853,40 @@
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BS – Data Science",
+      "program_name": "BS – Computer Science (Specialisation: Artificial Intelligence)",
       "tags": [
+        "computer-science",
+        "artificial-intelligence"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Computer Science (Specialisation: Data Science)",
+      "tags": [
+        "computer-science",
         "data-science"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "BS – Cyber Security",
+      "program_name": "BS – Computer Science (Specialisation: Cyber Security)",
       "tags": [
+        "computer-science",
         "cyber-security"
       ]
     },
     {
       "campus_name": "Main Campus",
-      "program_name": "B.ARCH – Architecture",
+      "program_name": "BS – Textile Sciences",
       "tags": [
-        "architecture"
+        "textile-sciences"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Development Studies",
+      "tags": [
+        "development-studies"
       ]
     },
     {
@@ -2177,10 +1898,160 @@
     },
     {
       "campus_name": "Main Campus",
+      "program_name": "BS – Physics",
+      "tags": [
+        "physics"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Chemistry",
+      "tags": [
+        "chemistry"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – English Linguistics",
+      "tags": [
+        "english-linguistics"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
       "program_name": "BS – Economics & Finance",
       "tags": [
-        "economics"
+        "economics",
+        "finance"
       ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "BS – Management Sciences",
+      "tags": [
+        "management-sciences"
+      ]
+    },
+    {
+      "campus_name": "Main Campus",
+      "program_name": "B.ARCH – Architecture",
+      "tags": [
+        "architecture"
+      ]
+    },
+    {
+      "campus_name": "City Campus",
+      "program_name": "BE – Civil Engineering",
+      "tags": [
+        "engineering",
+        "civil-engineering"
+      ]
+    },
+    {
+      "campus_name": "City Campus",
+      "program_name": "BE – Electrical Engineering",
+      "tags": [
+        "engineering",
+        "electrical-engineering"
+      ]
+    },
+    {
+      "campus_name": "City Campus",
+      "program_name": "BE – Mechanical Engineering",
+      "tags": [
+        "engineering",
+        "mechanical-engineering"
+      ]
+    },
+    {
+      "campus_name": "City Campus",
+      "program_name": "BE – Software Engineering",
+      "tags": [
+        "engineering",
+        "software-engineering"
+      ]
+    },
+    {
+      "campus_name": "City Campus",
+      "program_name": "BS – Computer Science",
+      "tags": [
+        "computer-science",
+        "ics"
+      ]
+    },
+    {
+      "campus_name": "City Campus",
+      "program_name": "BS – Management Sciences",
+      "tags": [
+        "management-sciences"
+      ]
+    },
+    {
+      "campus_name": "LEJ Campus",
+      "program_name": "BE – Textile Engineering",
+      "tags": [
+        "engineering"
+      ]
+    },
+    {
+      "campus_name": "LEJ Campus",
+      "program_name": "BE – Chemical Engineering",
+      "tags": [
+        "engineering",
+        "chemical-engineering"
+      ]
+    },
+    {
+      "campus_name": "LEJ Campus",
+      "program_name": "BS – Textile Sciences",
+      "tags": [
+        "textile-sciences"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BE – Civil Engineering (TIEST)",
+      "tags": [
+        "engineering",
+        "civil-engineering"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST)",
+      "tags": [
+        "computer-science",
+        "ics"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Artificial Intelligence)",
+      "tags": [
+        "computer-science",
+        "artificial-intelligence"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Cyber Security)",
+      "tags": [
+        "computer-science",
+        "cyber-security"
+      ]
+    },
+    {
+      "campus_name": "TIEST",
+      "program_name": "BS – Computer Science (TIEST Specialisation: Gaming and Animation)",
+      "tags": [
+        "computer-science",
+        "gaming-animation"
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "NED Entry Test"
     }
   ]
 }

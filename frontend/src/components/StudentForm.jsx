@@ -31,75 +31,72 @@ const StudentForm = ({ onSubmit }) => {
     'Other'
   ];
 
-  // Define subject-based interest restrictions - more realistic approach
+  // Define subject-based interest restrictions based on official NED prospectus criteria
   const subjectRestrictions = {
-    'Pre-Medical': [
-      // Pre-Medical students can choose ANY field (broadest background)
-      'Computer Science', 'Engineering', 'Technology', 'Architecture', 
-      'Software Engineering', 'Information Technology', 'Data Science',
-      'Artificial Intelligence', 'Cybersecurity', 'Robotics',
-      'Medicine', 'Dentistry', 'Pharmacy', 'Nursing', 'Physiotherapy',
-      'Medical Technology', 'Biotechnology', 'Biochemistry', 'Microbiology',
-      'Public Health', 'Nutrition', 'Business', 'Commerce', 'Economics', 
-      'Finance', 'Accounting', 'Marketing', 'Management', 'Banking', 
-      'Insurance', 'Taxation', 'Arts & Humanities', 'Literature', 
-      'History', 'Philosophy', 'Psychology', 'Sociology', 'Political Science', 
-      'International Relations', 'Media Studies', 'Journalism', 'Education'
-    ],
     'Pre-Engineering': [
-      // Pre-Engineering students can do everything EXCEPT medical/biology fields
-      'Computer Science', 'Engineering', 'Technology', 'Architecture', 
-      'Software Engineering', 'Information Technology', 'Data Science',
-      'Artificial Intelligence', 'Cybersecurity', 'Robotics',
-      'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-      'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-      'Arts & Humanities', 'Literature', 'History', 'Philosophy',
-      'Psychology', 'Sociology', 'Political Science', 'International Relations',
-      'Media Studies', 'Journalism', 'Education'
+      // Pre-Engineering: Eligible for ALL programs (most versatile group)
+      // According to prospectus: Eligible for all disciplines available within their academic group
+      'accounting', 'aerospace-engineering', 'agriculture', 'architecture', 'artificial-intelligence', 'avionics',
+      'bba', 'bioinformatics', 'biomedical-engineering', 'biotechnology', 'business',
+      'chemical-engineering', 'chemistry', 'civil-engineering', 'computational-finance', 'computer-engineering',
+      'computer-science', 'computer-systems', 'cyber-security', 'data-science', 'development-studies', 'dietetics',
+      'economics', 'electrical-engineering', 'electronic-engineering', 'engineering', 'english-linguistics',
+      'english-literature', 'environmental-engineering', 'environmental-science', 'finance', 'food-engineering',
+      'food-science', 'gaming-animation', 'geoinformatics', 'health-sciences', 'hospitality-management', 'humanities',
+      'industrial-design', 'industrial-manufacturing', 'information-security', 'law', 'llb', 'management-sciences',
+      'mass-communication', 'materials-engineering', 'mathematics', 'mbbs', 'mechanical-engineering', 'mechatronics',
+      'medicine', 'metallurgical-engineering', 'metallurgy', 'natural-sciences', 'naval-architecture', 'nutrition',
+      'petrochemical-engineering', 'petroleum-engineering', 'physics', 'polymer-engineering', 'psychology',
+      'public-administration', 'social-sciences', 'software-engineering', 'telecommunications', 'textile-sciences', 'tourism'
     ],
     'ICS (Computer Science)': [
-      // ICS students can do everything EXCEPT medical/biology fields
-      'Computer Science', 'Software Engineering', 'Information Technology',
-      'Data Science', 'Artificial Intelligence', 'Cybersecurity',
-      'Web Development', 'Game Development', 'Mobile Development',
-      'Engineering', 'Technology', 'Architecture', 'Robotics',
-      'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-      'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-      'Arts & Humanities', 'Literature', 'History', 'Philosophy',
-      'Psychology', 'Sociology', 'Political Science', 'International Relations',
-      'Media Studies', 'Journalism', 'Education'
+      // ICS: Eligible for BS programs + Computer Science + Architecture (NO Engineering)
+      // According to prospectus: NOT eligible for Engineering programs
+      'accounting', 'architecture', 'artificial-intelligence', 'bba', 'bioinformatics', 'biotechnology', 'business',
+      'chemistry', 'computational-finance', 'computer-science', 'computer-systems', 'cyber-security', 'data-science',
+      'development-studies', 'dietetics', 'economics', 'english-linguistics', 'english-literature', 'environmental-science',
+      'finance', 'food-science', 'gaming-animation', 'health-sciences', 'hospitality-management', 'humanities',
+      'industrial-design', 'information-security', 'law', 'llb', 'management-sciences', 'mass-communication',
+      'mathematics', 'mbbs', 'medicine', 'natural-sciences', 'nutrition', 'physics', 'psychology',
+      'public-administration', 'social-sciences', 'software-engineering', 'telecommunications', 'tourism'
+    ],
+    'Pre-Medical': [
+      // Pre-Medical: Eligible for BS programs + Biomedical Engineering only
+      // According to prospectus: NOT eligible for other Engineering, CS, or Management Sciences
+      'biomedical-engineering', 'biotechnology', 'chemistry', 'computational-finance', 'development-studies',
+      'dietetics', 'economics', 'english-linguistics', 'english-literature', 'environmental-science',
+      'finance', 'food-science', 'health-sciences', 'humanities', 'law', 'llb', 'mass-communication',
+      'mathematics', 'mbbs', 'medicine', 'natural-sciences', 'nutrition', 'physics', 'psychology',
+      'public-administration', 'social-sciences'
     ],
     'ICom (Commerce)': [
-      // Commerce students should focus on business/arts with some CS
-      'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-      'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-      'Arts & Humanities', 'Literature', 'History', 'Philosophy',
-      'Psychology', 'Sociology', 'Political Science', 'International Relations',
-      'Media Studies', 'Journalism', 'Education',
-      'Computer Science', 'Information Technology', 'Data Science',
-      'Web Development', 'Game Development', 'Mobile Development'
+      // Commerce: Eligible for Management Sciences, Economics & Finance, English Linguistics, Development Studies
+      // According to prospectus: NOT eligible for Engineering, CS, Computational Finance, or Physics
+      'accounting', 'bba', 'business', 'development-studies', 'economics', 'english-linguistics', 'english-literature',
+      'finance', 'hospitality-management', 'humanities', 'law', 'llb', 'management-sciences', 'mass-communication',
+      'psychology', 'public-administration', 'social-sciences', 'tourism'
     ],
     'IA (Arts)': [
-      // Arts students should focus on arts/humanities with some business/CS
-      'Arts & Humanities', 'Literature', 'History', 'Philosophy',
-      'Psychology', 'Sociology', 'Political Science', 'International Relations',
-      'Media Studies', 'Journalism', 'Education',
-      'Business', 'Commerce', 'Economics', 'Finance', 'Accounting',
-      'Marketing', 'Management', 'Banking', 'Insurance', 'Taxation',
-      'Computer Science', 'Information Technology', 'Data Science',
-      'Web Development', 'Game Development', 'Mobile Development'
+      // Arts: Eligible for Management Sciences, Economics & Finance, English Linguistics, Development Studies
+      // According to prospectus: NOT eligible for Engineering, CS, Computational Finance, or Physics
+      'accounting', 'bba', 'business', 'development-studies', 'economics', 'english-linguistics', 'english-literature',
+      'finance', 'hospitality-management', 'humanities', 'law', 'llb', 'management-sciences', 'mass-communication',
+      'psychology', 'public-administration', 'social-sciences', 'tourism'
     ],
     'Other': [
-      'Computer Science',
-      'Engineering',
-      'Medicine',
-      'Business',
-      'Arts & Humanities',
-      'Social Sciences',
-      'Natural Sciences',
-      'Agriculture',
-      'Architecture',
-      'Law'
+      // Default interests for students with unspecified HSC group
+      'accounting', 'aerospace-engineering', 'agriculture', 'architecture', 'artificial-intelligence', 'avionics',
+      'bba', 'bioinformatics', 'biomedical-engineering', 'biotechnology', 'business',
+      'chemical-engineering', 'chemistry', 'civil-engineering', 'computational-finance', 'computer-engineering',
+      'computer-science', 'computer-systems', 'cyber-security', 'data-science', 'development-studies', 'dietetics',
+      'economics', 'electrical-engineering', 'electronic-engineering', 'engineering', 'english-linguistics',
+      'english-literature', 'environmental-engineering', 'environmental-science', 'finance', 'food-engineering',
+      'food-science', 'gaming-animation', 'geoinformatics', 'health-sciences', 'hospitality-management', 'humanities',
+      'industrial-design', 'industrial-manufacturing', 'information-security', 'law', 'llb', 'management-sciences',
+      'mass-communication', 'materials-engineering', 'mathematics', 'mbbs', 'mechanical-engineering', 'mechatronics',
+      'medicine', 'metallurgical-engineering', 'metallurgy', 'natural-sciences', 'naval-architecture', 'nutrition',
+      'petrochemical-engineering', 'petroleum-engineering', 'physics', 'polymer-engineering', 'psychology',
+      'public-administration', 'social-sciences', 'software-engineering', 'telecommunications', 'textile-sciences', 'tourism'
     ]
   };
 
@@ -520,4 +517,4 @@ const StudentForm = ({ onSubmit }) => {
   );
 };
 
-export default StudentForm; 
+export default StudentForm;

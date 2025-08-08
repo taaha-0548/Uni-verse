@@ -21,8 +21,16 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
       }));
     }
   }, [studentData]);
+
+  // Default to 'priority' to maintain backend ordering
   const [sortBy, setSortBy] = useState('priority');
   const [sortOrder, setSortOrder] = useState('desc');
+
+  // Add original index to preserve backend ordering
+  const indexedOfferings = matchedOfferings.map((offering, index) => ({
+    ...offering,
+    originalIndex: index
+  }));
 
   const handleFilterChange = (filter, value) => {
     setFilters(prev => ({
@@ -40,84 +48,93 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
     }
   };
 
-  const filteredAndSortedOfferings = matchedOfferings
-    .filter(offering => {
-      if (filters.location && offering.campus.city !== filters.location) return false;
-      if (filters.programType && !offering.program_name.toLowerCase().includes(filters.programType.toLowerCase())) return false;
-      if (offering.annual_fee > filters.maxFees) return false;
-      if (offering.match_score < filters.minMatch) return false;
+  // Filter the offerings based on selected filters
+  const filteredOfferings = indexedOfferings.filter(offering => {
+    // Location filter - flexible matching
+    if (filters.location && !offering.campus.city.toLowerCase().includes(filters.location.toLowerCase())) return false;
+    
+    // Program type filter
+    if (filters.programType && !offering.program_name.toLowerCase().includes(filters.programType.toLowerCase())) return false;
+    
+    // Max fees filter
+    if (offering.annual_fee > filters.maxFees) return false;
+    
+    // Min match score filter
+    if (offering.match_score < filters.minMatch) return false;
+    
+    // Subject compatibility filter
+    if (filters.subjectCompatible === 'compatible' && !offering.subject_compatibility) return false;
+    if (filters.subjectCompatible === 'incompatible' && offering.subject_compatibility) return false;
+    
+    // Eligibility filter
+    if (studentData && filters.eligibility !== 'all') {
+      const studentScore = Math.max(studentData.sscPercentage || 0, studentData.hscPercentage || 0);
+      const isEligible = studentScore >= offering.min_score_pct;
       
-      // Filter by subject compatibility
-      if (filters.subjectCompatible === 'compatible' && !offering.subject_compatibility) return false;
-      if (filters.subjectCompatible === 'incompatible' && offering.subject_compatibility) return false;
-      
-      // Filter by eligibility
-      if (studentData && filters.eligibility !== 'all') {
-        const studentScore = Math.max(studentData.sscPercentage || 0, studentData.hscPercentage || 0);
-        const isEligible = studentScore >= offering.min_score_pct;
+      if (filters.eligibility === 'eligible' && !isEligible) return false;
+      if (filters.eligibility === 'ineligible' && isEligible) return false;
+    }
+    
+    return true;
+  });
+
+   // Sort the filtered offerings
+  const filteredAndSortedOfferings = (() => {
+    // Always sort by match score primarily, then by interest matches
+    const sorted = [...filteredOfferings].sort((a, b) => {
+      // First, check if we're sorting by priority (Best Match)
+      if (sortBy === 'priority') {
+        // Priority is determined by match_score which includes interest matching
+        const scoreDiff = b.match_score - a.match_score;
+        if (scoreDiff !== 0) return scoreDiff;
         
-        if (filters.eligibility === 'eligible' && !isEligible) return false;
-        if (filters.eligibility === 'ineligible' && isEligible) return false;
+        // If scores are equal, maintain original backend order
+        return a.originalIndex - b.originalIndex;
       }
       
-      return true;
-    })
-    .sort((a, b) => {
+      // Handle other sorting options
       let aValue, bValue;
       
       switch (sortBy) {
         case 'relevance':
-          aValue = a.match_score;
-          bValue = b.match_score;
-          break;
-        case 'fees':
-          aValue = a.annual_fee;
-          bValue = b.annual_fee;
-          break;
         case 'match':
           aValue = a.match_score;
           bValue = b.match_score;
-          break;
+          return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
+        case 'fees':
+          aValue = a.annual_fee;
+          bValue = b.annual_fee;
+          return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
         case 'minScore':
-          // Get student's academic score
-          const studentScore = Math.max(studentData?.sscPercentage || 0, studentData?.hscPercentage || 0);
-          
-          // Calculate eligibility score (higher score = more eligible)
-          // If student meets requirement, give higher score
-          const aEligible = studentScore >= a.min_score_pct;
-          const bEligible = studentScore >= b.min_score_pct;
-          
-          if (aEligible && !bEligible) return -1;
-          if (!aEligible && bEligible) return 1;
-          
-          // If both eligible, prioritize programs with higher requirements (more prestigious)
-          if (aEligible && bEligible) {
-            // Higher requirements should appear first (descending order)
-            aValue = a.min_score_pct;
-            bValue = b.min_score_pct;
-          } else {
-            // If both ineligible, sort by minimum score requirement
-            aValue = a.min_score_pct;
-            bValue = b.min_score_pct;
+          if (studentData) {
+            const studentScore = Math.max(studentData.sscPercentage || 0, studentData.hscPercentage || 0);
+            const aEligible = studentScore >= a.min_score_pct;
+            const bEligible = studentScore >= b.min_score_pct;
+            
+            // Prioritize eligible programs first
+            if (aEligible && !bEligible) return sortOrder === 'desc' ? -1 : 1;
+            if (!aEligible && bEligible) return sortOrder === 'desc' ? 1 : -1;
           }
-          break;
-        case 'priority':
-          // Use backend's ranking - programs are already sorted by priority
-          // Just maintain the order as received from backend
-          return 0; // Keep original order from backend
-          break;
-        case 'backend':
-          // Respect the backend's original ranking order
-          return 0; // Keep original order from backend
-          break;
+          
+          aValue = a.min_score_pct;
+          bValue = b.min_score_pct;
+          return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
         default:
-          return 0;
+          return a.originalIndex - b.originalIndex;
       }
-      
-      return sortOrder === 'asc' ? aValue - bValue : bValue - aValue;
     });
+    
+    return sorted;
+  })();
 
-  const locations = [...new Set(matchedOfferings.map(o => o.campus.city))];
+  // Extract unique locations for filter dropdown
+  const locations = [...new Set(
+    matchedOfferings.map(o => {
+      const parts = o.campus.city.split(',');
+      return parts[parts.length - 1].trim();
+    })
+  )].sort();
+
   const programTypes = ['Computer Science', 'Engineering', 'Medicine', 'Business', 'Arts', 'Law'];
 
   return (
@@ -267,6 +284,21 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                   className="w-full"
                 />
               </div>
+
+              {/* Clear Filters Button */}
+              <button
+                onClick={() => setFilters({
+                  location: '',
+                  programType: '',
+                  maxFees: 1000000,
+                  minMatch: 0,
+                  subjectCompatible: 'all',
+                  eligibility: 'all'
+                })}
+                className="w-full px-4 py-2 text-sm text-gray-600 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors"
+              >
+                Clear All Filters
+              </button>
             </div>
           </div>
 
@@ -278,22 +310,36 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                 <span className="text-sm text-gray-600">
                   {filteredAndSortedOfferings.length} offerings found
                 </span>
-                <div className="flex items-center space-x-4">
+                <div className="flex items-center space-x-2 md:space-x-4">
                   <span className="text-sm text-gray-600">Sort by:</span>
+                  
+                  <button
+                    onClick={() => handleSort('priority')}
+                    className={`flex items-center space-x-1 px-3 py-1 rounded transition-colors ${
+                        sortBy === 'priority' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
+                    }`}
+                  >
+                    <span>Best Match</span>
+                    {sortBy === 'priority' && (
+                        sortOrder === 'asc' ? <SortAsc className="w-4 h-4" /> : <SortDesc className="w-4 h-4" />
+                    )}
+                  </button>
+                  
                   <button
                     onClick={() => handleSort('relevance')}
-                    className={`flex items-center space-x-1 px-3 py-1 rounded ${
+                    className={`flex items-center space-x-1 px-3 py-1 rounded transition-colors ${
                       sortBy === 'relevance' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
-                    <span>Relevance</span>
+                    <span>Relevance Score</span>
                     {sortBy === 'relevance' && (
                       sortOrder === 'asc' ? <SortAsc className="w-4 h-4" /> : <SortDesc className="w-4 h-4" />
                     )}
                   </button>
+                  
                   <button
                     onClick={() => handleSort('fees')}
-                    className={`flex items-center space-x-1 px-3 py-1 rounded ${
+                    className={`flex items-center space-x-1 px-3 py-1 rounded transition-colors ${
                       sortBy === 'fees' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
@@ -302,46 +348,67 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                       sortOrder === 'asc' ? <SortAsc className="w-4 h-4" /> : <SortDesc className="w-4 h-4" />
                     )}
                   </button>
+                  
                   <button
-                    onClick={() => handleSort('match')}
-                    className={`flex items-center space-x-1 px-3 py-1 rounded ${
-                      sortBy === 'match' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
+                    onClick={() => handleSort('minScore')}
+                    className={`flex items-center space-x-1 px-3 py-1 rounded transition-colors ${
+                      sortBy === 'minScore' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
                     }`}
                   >
-                    <span>Match %</span>
-                    {sortBy === 'match' && (
+                    <span>Eligibility</span>
+                    {sortBy === 'minScore' && (
                       sortOrder === 'asc' ? <SortAsc className="w-4 h-4" /> : <SortDesc className="w-4 h-4" />
                     )}
                   </button>
-                                     <button
-                     onClick={() => handleSort('minScore')}
-                     className={`flex items-center space-x-1 px-3 py-1 rounded ${
-                       sortBy === 'minScore' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
-                     }`}
-                   >
-                     <span>Min Score</span>
-                     {sortBy === 'minScore' && (
-                       sortOrder === 'asc' ? <SortAsc className="w-4 h-4" /> : <SortDesc className="w-4 h-4" />
-                     )}
-                   </button>
-                                       <button
-                      onClick={() => handleSort('priority')}
-                      className={`flex items-center space-x-1 px-3 py-1 rounded ${
-                        sortBy === 'priority' ? 'bg-blue-100 text-blue-700' : 'text-gray-600 hover:bg-gray-100'
-                      }`}
-                    >
-                      <span>Interest Priority</span>
-                      {sortBy === 'priority' && (
-                        sortOrder === 'asc' ? <SortAsc className="w-4 h-4" /> : <SortDesc className="w-4 h-4" />
-                      )}
-                    </button>
                 </div>
               </div>
             </div>
 
+            {/* Check if student's interests are available in preferred location */}
+            {(() => {
+              const noDirectInterestInLocation = (() => {
+                if (!studentData || !studentData.preferredLocation || !studentData.interests) return false;
+
+                // Check if any programs in preferred location match student's direct interests
+                const interestsInLocation = matchedOfferings.filter(offering => {
+                  const matchesLocation = offering.campus.city.toLowerCase().includes(studentData.preferredLocation.toLowerCase());
+
+                  if (!matchesLocation) return false;
+
+                  // Check if program matches any of student's interests
+                  const programTags = offering.tags || [];
+                  const studentInterests = studentData.interests || [];
+
+                  return studentInterests.some(interest => 
+                    programTags.some(tag => 
+                      tag.toLowerCase().includes(interest.toLowerCase()) || 
+                      offering.program_name.toLowerCase().includes(interest.toLowerCase())
+                    )
+                  );
+                });
+
+                return interestsInLocation.length === 0;
+              })();
+
+              if (noDirectInterestInLocation) {
+                const primaryInterest = studentData.interestPriorities ? 
+                  studentData.interestPriorities[0]?.interest : 
+                  studentData.interests[0];
+
+                return (
+                  <div className="mb-6 bg-yellow-50 border border-yellow-200 text-yellow-800 px-4 py-3 rounded-lg">
+                    <strong>Note:</strong> Your interested program
+                    <span className="font-semibold"> "{primaryInterest}"</span> is not available in
+                    <span className="font-semibold"> "{studentData.preferredLocation}"</span>. Showing other similar programs instead.
+                  </div>
+                );
+              }
+              return null;
+            })()}
+
             {/* Program Offering Cards */}
             <div className="space-y-4">
-              {filteredAndSortedOfferings.map((offering, index) => (
+              {filteredAndSortedOfferings.map((offering) => (
                 <div key={offering.offering_id} className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
                     <div className="flex-1">
@@ -455,7 +522,7 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                     <div className="flex flex-col space-y-2 lg:ml-6">
                       <Link
                         to={`/program/${offering.program_id}`}
-                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors"
+                        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors text-center"
                       >
                         View Details
                       </Link>
@@ -476,7 +543,7 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
 
             {filteredAndSortedOfferings.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-gray-500 text-lg">No program offerings match your current filters.</p>
+                <p className="text-gray-500 text-lg mb-4">No program offerings match your current filters.</p>
                 <button
                   onClick={() => setFilters({
                     location: '',
@@ -486,7 +553,7 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
                     subjectCompatible: 'all',
                     eligibility: 'all'
                   })}
-                  className="mt-4 text-blue-600 hover:text-blue-700 font-medium"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
                 >
                   Clear all filters
                 </button>
@@ -499,4 +566,4 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
   );
 };
 
-export default ResultsPage; 
+export default ResultsPage;
