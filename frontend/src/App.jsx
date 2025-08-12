@@ -8,6 +8,8 @@ import ProgramDetail from './components/ProgramDetail';
 import UniversityDetail from './components/UniversityDetail';
 import Dashboard from './components/Dashboard';
 import './index.css';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
+
 
 function App() {
   const [studentData, setStudentData] = useState(null);
@@ -17,7 +19,7 @@ function App() {
     setStudentData(formData);
     
     try {
-      const response = await fetch('http://localhost:5000/api/match-programs', {
+      const response = await fetch('${API_BASE_URL}/api/match-programs', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
