@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from models import db, University, Campus, Program, ProgramOffering, ProgramOfferingBoard, ProgramOfferingGroup, ProgramOfferingTest, ProgramOfferingTag, Tag, EntranceTestType
+from backend.models import db, University, Campus, Program, ProgramOffering, ProgramOfferingBoard, ProgramOfferingGroup, ProgramOfferingTest, ProgramOfferingTag, Tag, EntranceTestType
 import datetime
 import os
 from dotenv import load_dotenv
