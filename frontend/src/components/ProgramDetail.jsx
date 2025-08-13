@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, MapPin, DollarSign, Calendar, Phone, Mail, Globe, Clock, Users, BookOpen, Building } from 'lucide-react';
-
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 const ProgramDetail = () => {
   const { id } = useParams();
   const [program, setProgram] = useState(null);
@@ -12,7 +12,7 @@ const ProgramDetail = () => {
     const fetchProgramData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:5000/api/program/${id}`);
+        const response = await fetch(`${API_BASE_URL}/api/program/${id}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch program data');
