@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, MapPin, Phone, Mail, Globe, Users, Calendar, Award, Building, Wifi, Car, BookOpen, Instagram, Facebook, Twitter, Linkedin } from 'lucide-react';
+const API_BASE_URL = import.meta.env.VITE_API_URL;
 
 const UniversityDetail = () => {
   const { id } = useParams();
@@ -12,7 +13,7 @@ const UniversityDetail = () => {
     const fetchUniversityData = async () => {
       try {
         setLoading(true);
-        const response = await fetch(`http://localhost:5000/api/university/${id}`);
+        const response = await fetch(`${API_BASE_URL}/api/university/${id}`);
         
         if (!response.ok) {
           throw new Error('Failed to fetch university data');
