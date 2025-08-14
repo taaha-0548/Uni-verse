@@ -3,6 +3,19 @@ import { Link } from 'react-router-dom';
 import { MapPin, DollarSign, Star, Filter, SortAsc, SortDesc, AlertCircle, CheckCircle } from 'lucide-react';
 
 const ResultsPage = ({ matchedOfferings, studentData }) => {
+ 
+  
+   const [loading, setLoading] = useState(true); // keep
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 300);
+    return () => clearTimeout(timer);
+  }, []);
+  
+  
+  
+  
+  
+  
   const [filters, setFilters] = useState({
     location: '',
     programType: '',
@@ -48,6 +61,13 @@ const ResultsPage = ({ matchedOfferings, studentData }) => {
     }
   };
 
+     if (loading) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+      </div>
+    );
+  }
   // Filter the offerings based on selected filters
   const filteredOfferings = indexedOfferings.filter(offering => {
     // Location filter - flexible matching
